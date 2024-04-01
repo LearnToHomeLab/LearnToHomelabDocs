@@ -1,0 +1,74 @@
+site_name: learn To Homelab
+theme: 
+  name: material
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.sections
+    - navigation.path
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: teal
+      accent: purple 
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: teal
+      accent: lime
+
+  plugins:
+  
+  - social
+  - search
+  - material
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: hhttps://github.com/LearnToHomeLab
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UChC4ztzEchbm0nxIhw5zyog
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      #emoji_index: !!python/name:materialx.emoji.twemoji
+      #emoji_generator: !!python/name:materialx.emoji.to_svg
+nav:
+  - Home: index.md #anything at this level will show as a tab at the top of the page
+  - Homelab Series:
+      - EP 0 - Start Guide: homelabseries/EP0_startguide.md
+      - EP 1 - Note Keeping: homelabseries/EP1_notekeeping.md
+      - EP 2 - Firewall Install: homelabseries/EP2_firewall.md
+      - EP 3 - Proxmox Install: homelabseries/EP3_proxmox.md
+      - EP 4 - Setting up your first VM: homelabseries/EP4_firstvmubuntu.md
+      - Learn to Homelab: homelabseries/LearntoHomelab.md #anything at this level will show the blue text as a option on the side and the red will link to the page content created
+
+
+
+copyright: |
+  &copy; 2024 <a href="https://www.youtube.com/channel/UChC4ztzEchbm0nxIhw5zyog"  target="_blank" rel="noopener">Learn To Homelab</a>
