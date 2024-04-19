@@ -1,5 +1,5 @@
 # Installing Your First VM (Ubuntu) on Proxmox
-This episode will go over basic linux commands, how to setup your first virtual machine (VM) inside Proxmox, and important things to know and understand when operating inside of the Linux terminal. 
+This episode will go over basic Linux commands, how to setup your first virtual machine (VM) inside Proxmox, and important things to know and understand when operating inside of the Linux terminal. 
 
 <!DOCTYPE html>
 <html lang="en">

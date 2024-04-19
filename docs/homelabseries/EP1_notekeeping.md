@@ -2,12 +2,12 @@
 
 Obsidian is a note-taking and knowledge management software designed to help users organize, connect, and develop their ideas. It is based on the concept of a "personal knowledge base" (PKB) and utilizes a method known as "markdown" for formatting text.
 
-As our video explained, Note taking is a critial tool and a skill you must master, no one likes paperwork but proper documentation easily makes up almost half of IT roles. 
+As our video explained, Note taking is a critical tool and a skill you must master, no one likes paperwork but proper documentation easily makes up almost half of IT roles. 
 
-The last step in the troubleshooting metholody is document the solution. It is described as, "Document the troubleshooting process, including the problem description, steps taken, root cause, and solution implemented. This documentation can serve as a reference for future troubleshooting efforts and knowledge sharing." You will become a master of the troubleshooting methodolody as time goes on, one thing to keep in mind, the symptoms do not always charactrize the root cause of your issue. 
+The last step in the troubleshooting methodology is document the solution. It is described as, "Document the troubleshooting process, including the problem description, steps taken, root cause, and solution implemented. This documentation can serve as a reference for future troubleshooting efforts and knowledge sharing." You will become a master of the troubleshooting methodology as time goes on, one thing to keep in mind, the symptoms do not always characterize the root cause of your issue. 
 
 ## Installing Obsidian the note taking application
-You can download Obsidian direclty from [here](https://obsidian.md/download)
+You can download Obsidian directly from [here](https://obsidian.md/download)
 
 Click the download button, now go to your downloads folder.
 <a href="/images/EP0_notekeeping/step_1_note.png" class="image-expand">
@@ -21,11 +21,11 @@ You will be brought to this menu, select *quick start*
 <a href="/images/EP0_notekeeping/step_3_note.png" class="image-expand">
     <img src="/images/EP0_notekeeping/step_3_note.png" alt="Description of your image">
 </a>
-Aftet that there is a couple things we need to do. 
+After that there is a couple things we need to do. 
 
 1. We first need to create a folder (top left) that will store our images. 
 
-2. Then we will go to the settings on the bottom left (gear icon) change or theme to dark mode under a*ppearance*
+2. Then we will go to the settings on the bottom left (gear icon) change or theme to dark mode under *appearance*
 
 3. Then select the folder for our images that we just created under *files and links*. 
 

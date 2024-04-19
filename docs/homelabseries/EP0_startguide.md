@@ -5,7 +5,7 @@ Who are we:
 We are a team of individuals who come from all types of backgrounds, we do have heavy roots in the Department of Defense and the United States military including The United States Marine Corps, The United States Air Force, and The United States Army. There is one slogan we do say within our company, "In the army, they do it different." That is good banter because our CEO comes from The Marine Corps.
 
 Why did we start this company?: 
-The CEO noticed that there is a major discrepancy in the quality of knowledge our cyber security professionals have compared to other countries (since our roots are rooted in the DOD space we also see this as an issue to national security) so we wanted to help increase the publically available knowledge and in turn, this hands-on knowledge should also help you, the employee at getting your next tech gig by dominating the technical questions in your interview and boosting your resume with your now much more diverse portfolio. 
+The CEO noticed that there is a major discrepancy in the quality of knowledge our cyber security professionals have compared to other countries (since our roots are rooted in the DOD space we also see this as an issue to national security) so we wanted to help increase the publicly available knowledge and in turn, this hands-on knowledge should also help you, the employee at getting your next tech gig by dominating the technical questions in your interview and boosting your resume with your now much more diverse portfolio. 
 
 
 ## First things first
@@ -14,7 +14,7 @@ I want to emphasize that this course is about getting hands-on skills to pass an
 Lastly, before we get started. Realize that this industry is COMPETITIVE, if you want to study, get a job, and sit back, this industry is not for you. I have been doing this for about ten years and to this day I spend around 10-20 hours a week bettering myself. 
 
 ## Things you do not need to do in this course
-> Some videos are not required to setup a succesful homelab, use case will determine that, please read on. 
+> Some videos are not required to setup a successful home lab, use case will determine that, please read on. 
 {.is-info}
 
 Okay before we get down to the course content it is important to understand that there are certain things you are not **REQUIRED** to do. What do we mean by this? HomeLabs are about learning and catering towards what you want, however some people may expose things to the internet or use a virtual private network (VPN) that will allow them access to their internal resources externally. **In this course we will cover some of that but will NOT be making services public through the firewall. Best practice will be to use a VPN tunnel and that is what is covered in this course. Because of this, the Firewall video is not required.**

@@ -13,7 +13,7 @@ A network topology is the physical and logical arrangement of nodes and connecti
 </a>
 
 ## Required Items:
-The Proxmox machine being used in this guide: [N95 mini pc](https://amzn.to/49Ul82n) (I highly reccomend you go with something that has 16gb of RAM or more).
+The Proxmox machine being used in this guide: [N95 mini pc](https://amzn.to/49Ul82n) (I highly recommend you go with something that has 16gb of RAM or more).
 Recommended: [Beelink Mini PC SER5](https://amzn.to/3vdgbTe)
 Alternative: [Beelink U59 dual ethernet](https://amzn.to/3PloqUa)
 - [x] Proxmox Appliance (some type of PC that you are okay with running 24/7)

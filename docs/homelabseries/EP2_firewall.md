@@ -14,7 +14,7 @@ A network topology is the physical and logical arrangement of nodes and connecti
 ## Required Items:
 The firewall being used in this guide: [firewall](https://tinyurl.com/ynvvvdrw) 
 Alternative: [Beelink U59 dual ethernet](https://amzn.to/3PloqUa)
-**or you can use any mini pc of your chosing and equip the USB 3.0 ports with a** [USB to ethernet adapter](https://amzn.to/4a8eXrT)
+**or you can use any mini pc of your choosing and equip the USB 3.0 ports with a** [USB to ethernet adapter](https://amzn.to/4a8eXrT)
 
 - [x] Firewall Appliance (this could be a mini PC with two ethernet ports)
 - [x] USB thumb Drive
