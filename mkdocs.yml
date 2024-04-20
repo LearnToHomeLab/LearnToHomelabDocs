@@ -1,6 +1,8 @@
 site_name: learn To Homelab
 theme: 
   name: material
+  favicon: /images/logo/favicon.png
+  logo: /images/logo/favicon.png
 
   features:
     - navigation.tabs
@@ -51,6 +53,9 @@ extra:
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
+  extra_css:
+    - custom.css
+
 
 markdown_extensions:
   - pymdownx.highlight:
