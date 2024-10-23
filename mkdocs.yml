@@ -83,7 +83,7 @@ nav:
       - EP 3 - Proxmox Install: homelabseries/EP3_proxmox.md
       - EP 4 - Setting up your first VM: homelabseries/EP4_firstvmubuntu.md
       - Learn to Homelab: homelabseries/LearntoHomelab.md #anything at this level will show the blue text as a option on the side and the red will link to the page content created
-
+      - EP5_Test: homelabseries/EP5_test.md
 
 
 copyright: |
