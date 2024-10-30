@@ -82,8 +82,8 @@ Despite these differences, the majority of basic commands and utilities (such as
 <title>Informative Section</title>
 <style>
 .informative-section {
-    background-color: #283593; /* Dark blue background color */
-    color: white; /* Text color to contrast with dark background */
+    background-color: #8CD2F4; /* Dark blue background color */
+    color: black; /* Text color to contrast with dark background */
     padding: 20px; /* Padding inside the box */
     border-radius: 10px; /* Rounded corners */
     display: flex;
@@ -99,7 +99,7 @@ Despite these differences, the majority of basic commands and utilities (such as
     align-items: center;
     margin-right: 15px;
     font-size: 20px;
-    color: #283593; /* Dark blue color for the exclamation mark */
+    color: #231F20; /* Dark blue color for the exclamation mark */
 }
 </style>
 </head>
@@ -122,8 +122,8 @@ Despite these differences, the majority of basic commands and utilities (such as
 <title>Warning Box Example</title>
 <style>
 .warning-box {
-    background-color: #8B0000; /* Light red background color */
-    border-left: 6px solid #f44336; /* Red border on the left side */
+    background-color: #E4141E; /* Light red background color */
+    border-left: 6px solid #8CD2F4; /* Red border on the left side */
     padding: 10px; /* Padding inside the box */
     margin-bottom: 20px; /* Margin at the bottom to separate from other content */
     /* You can add more styles as needed */

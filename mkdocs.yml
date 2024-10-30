@@ -3,6 +3,8 @@ theme:
   name: material
   favicon: /images/logo/favicon.png
   logo: /images/logo/favicon.png
+  font:
+    text: Helvetica
 
   features:
     - navigation.tabs
@@ -21,14 +23,14 @@ theme:
     - scheme: default
       toggle:
         icon: material/toggle-switch-off-outline 
-        name: Switch to dark mode
-      primary: teal
+        name: Switch to light mode 
+      primary: custom
       accent: purple 
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
-        name: Switch to light mode    
-      primary: teal
+        name: Switch to dark mode    
+      primary: custom
       accent: lime
 
   plugins:
@@ -42,7 +44,6 @@ extra:
       link: hhttps://github.com/LearnToHomeLab
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/channel/UChC4ztzEchbm0nxIhw5zyog
-  extra:
   analytics:
     provider: google
     property: G-8W8J33P5JD
@@ -53,7 +54,7 @@ extra:
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
-  extra_css:
+extra_css:
     - custom.css
 
 
@@ -82,8 +83,8 @@ nav:
       - EP 2 - Firewall Install: homelabseries/EP2_firewall.md
       - EP 3 - Proxmox Install: homelabseries/EP3_proxmox.md
       - EP 4 - Setting up your first VM: homelabseries/EP4_firstvmubuntu.md
-      - Learn to Homelab: homelabseries/LearntoHomelab.md #anything at this level will show the blue text as a option on the side and the red will link to the page content created
-      - EP5_Test: homelabseries/EP5_test.md
+      # - Learn to Homelab: homelabseries/LearntoHomelab.md #anything at this level will show the blue text as a option on the side and the red will link to the page content created
+      # - EP5_Test: homelabseries/EP5_test.md
 
 
 copyright: |
