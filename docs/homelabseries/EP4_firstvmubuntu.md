@@ -34,24 +34,24 @@ This episode will go over basic Linux commands, how to setup your first virtual 
 
 <div class="informative-section">
     <div class="circle-emoji">!</div>
-    <p>This is a beginner friendly course so we understand many of you may find this lesson to be a review but these fundamental concepts are very important for beginners.</p>
+    <p>This is a beginner-friendly course, so we understand many of you may find this lesson to be a review, but these fundamental concepts are very important for beginners.</p>
 </div>
 
 </body>
 </html>
 
 ## What is Linux? 
-Linux is an operating system, just like Windows or macOS, but it's built on an entirely different philosophy and foundation. Here's an explanation in simple terms:
+Linux is an operating system like Windows or macOS, but it's built on an entirely different philosophy and foundation. Here's an explanation in simple terms:
 
-Operating System: An operating system is the software that manages all the hardware resources of a computer and provides the base upon which other software can operate. It handles tasks like managing files, running applications, and controlling hardware.
+Operating System: An operating system is the software that manages a computer's hardware resources and provides the base upon which other software can operate. It handles tasks like managing files, running applications, and controlling hardware.
 
-Open Source: Unlike Windows or macOS, which are owned and developed by specific companies (Microsoft and Apple, respectively), Linux is open source. This means its source code is freely available for anyone to view, modify, and distribute.
+Open Source: Unlike Windows or macOS, owned and developed by specific companies (Microsoft and Apple, respectively), Linux is open source. This means its source code is freely available to view, modify, and distribute.
 
-Variety of Distributions: Instead of a single version like Windows or macOS, Linux comes in many different flavors called "distributions" or "distros." Each distro packages the Linux kernel (the core of the operating system) along with various software applications and utilities. Examples of popular Linux distros include Ubuntu, Fedora, and Debian.
+Variety of Distributions: Instead of a single version like Windows or macOS, Linux comes in different flavors called "distributions" or "distros." Each distro packages the Linux kernel (the core of the operating system) along with various software applications and utilities. Examples of popular Linux distros include Ubuntu, Fedora, and Debian.
 
 Customization: Linux is highly customizable. Users can choose different desktop environments (the look and feel of the graphical interface), install software packages tailored to their needs, and configure the system to their liking.
 
-Command Line Interface (CLI): While Linux does have graphical user interfaces (GUIs) like other operating systems, it also emphasizes the use of the command line interface (CLI). This means users can interact with the system and perform tasks by typing commands rather than clicking on icons.
+Command Line Interface (CLI): While Linux does have graphical user interfaces (GUIs) like other operating systems, it also emphasizes the use of the command line interface (CLI). Users can interact with the system and perform tasks by typing commands rather than clicking on icons.
 
 Stability and Security: Linux is known for its stability and security. It's widely used in servers, supercomputers, and other critical systems where reliability and security are paramount.
 
@@ -59,7 +59,7 @@ Community Support: Linux has a vibrant and active community of users and develop
 
 In summary, Linux is an open-source operating system known for its flexibility, customization options, stability, and security. It's used by a wide range of people, from casual home users to large corporations and organizations, and it offers an alternative to proprietary operating systems like Windows and macOS.
 ## Linux Distributions
-We covered Linux distros earlier but I wanted to go more in depth of what that actually means. 
+We covered Linux distros earlier, but I wanted to go more in-depth about what that actually means. 
 
 UNIX distributions, including both Debian-based (e.g., Ubuntu) and non-Debian-based (e.g., Fedora, CentOS), typically adhere to a set of common command-line utilities and shell commands. These commands are often part of the POSIX (Portable Operating System Interface) standard, which defines a set of standards for ensuring compatibility between UNIX-like operating systems.
 
@@ -73,7 +73,8 @@ Init Systems: Different distributions may use different init systems (such as sy
 
 Default Shell: While most UNIX distributions use the Bash shell (Bourne Again Shell) as the default shell, some may use alternatives like Zsh (Z Shell) or Dash. While the core set of commands remains the same, the behavior or features of the shell may differ slightly.
 
-Despite these differences, the majority of basic commands and utilities (such as ls, cd, mkdir, rm, etc.) are consistent across UNIX distributions, allowing users to transfer their skills and knowledge between different systems with relative ease. Additionally, online documentation and resources specific to each distribution can help users navigate any differences and effectively use the system.
+Despite these differences, most basic commands and utilities (such as ls, cd, mkdir, rm, etc.) are consistent across UNIX distributions, allowing users to transfer their skills and knowledge between different systems with relative ease. Additionally, online documentation and resources specific to each distribution can help users navigate any differences and effectively use the system.
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -107,7 +108,7 @@ Despite these differences, the majority of basic commands and utilities (such as
 
 <div class="informative-section">
     <div class="circle-emoji">!</div>
-    <p>Throughout this course we are going to use Debian based distros, which also hapen to be the most popular across the industry. I HIGHLY recommend you stick within the Debian bubble. </p>
+    <p>Throughout this course, we are going to use Debian-based distros, which also happen to be the most popular across the industry. I HIGHLY recommend you stick within the Debian bubble. </p>
 </div>
 
 </body>
@@ -133,7 +134,8 @@ Despite these differences, the majority of basic commands and utilities (such as
 <body>
 
 <div class="warning-box">
-    <p>If you are new and unfamiliar with Linux please read the Linux section, if you want to continue on with installing your virtual machine (VM) then please click the "installing your VM" section under the table of contents.</p>
+    <p>If you are new and unfamiliar with Linux, please read the Linux section; if you want to continue with installing your virtual machine (VM), then please click the "installing your VM" section under the table of contents found on the right side of your screen
+    </p>
 </div>
 
 </body>
@@ -142,23 +144,24 @@ Despite these differences, the majority of basic commands and utilities (such as
 ## Linux For beginners (navigation)
 Learn more Linux commands
 > To get Linux practice please checkout [Linux Journey](https://linuxjourney.com/)
-> To learn more linux commands please see [Digital Oceans Linux Examples](https://www.digitalocean.com/community/tutorials/linux-commands)
+> To learn more Linux commands please see [Digital Oceans Linux Examples](https://www.digitalocean.com/community/tutorials/linux-commands)
 {.is-info}
 
 **Linux Commands**
 
-Linux and specifically Linux Server is administrated (controlled) primarily through the Command Line interface (CLI), being able to understand and navigate your way through the CLI is critical for the remainder of this course. 
+Linux, specifically Linux Server, is administrated (controlled) primarily through the Command Line Interface (CLI); understanding and navigating your way through the CLI is critical for the remainder of this course. 
 
-For the simplicity and timeliness of this episode, I am going to cover how to navigate within the Linux CLI but futher episodes and articles will explain commands before they are used. 
+For the simplicity and timeliness of this episode, I will cover how to navigate within the Linux CLI but further episodes and articles will explain commands before they are used. 
 
 Navigation commands: 
 Here are some common CLI (Command-Line Interface) commands used in Debian-based Linux distributions like Debian itself, Ubuntu, and Linux Mint:
 
-The CLI has three major indicators in red, your username, in yellow the device you are currently connected to, and then a symbol of ~$ or ~#.
+The CLI has three major indicators in red: your username, in yellow the device you are currently connected to, and then a symbol of ~$ or ~#.
 
-When you see the $ symbol in the Linux CLI, it typically indicates that the shell prompt is in the regular user mode. This means you're logged in as a regular user and have limited permissions.
+The $ symbol in the Linux CLI typically indicates that the shell prompt is in regular user mode. This means you're logged in as a regular user and have limited permissions.
 
-When you see the # symbol in the Linux CLI, it indicates that the shell prompt is in the root or superuser mode. This means you have administrative privileges and can perform tasks that require elevated permissions, such as installing software or modifying system configurations.
+The # symbol in the Linux CLI indicates that the shell prompt is in the root or superuser mode. This means you have administrative privileges and can perform tasks that require elevated permissions, such as installing software or modifying system configurations.
+
 <a href="/images/EP4_firstvmubuntu/ubuntu_user.png" class="image-expand">
     <img src="/images/EP4_firstvmubuntu/ubuntu_user.png" alt="Description of your image">
 </a>
@@ -209,7 +212,7 @@ When you see the # symbol in the Linux CLI, it indicates that the shell prompt i
 ---
 I know that table may feel overwhelming, but fear not. Throughout this course we will go over the commands as we use them. Again, please feel free to practice using [Linux Journey](https://linuxjourney.com/).
   
-> Alright  if you are ready, lets get started! (Click the Installing VM tab)
+> Alright, if you are ready, let's get started! (Click the Installing VM tab)
 {.is-info}
 
   
@@ -243,9 +246,9 @@ Settings:
 ---
 
  -General Tab.
-  Node: (select whatever Proxmox server or mini PC you want to install to (our case it is pve still).
+  Node: (select whatever Proxmox server or mini-PC you want to install to (our case, it is still pve).
   VM Id: does not matter (you can leave default).
-  Name: (Describe what you are installing on the Ubuntu server (Wiki.Js, ARK server, Minecraft, Zabbix, etc).
+  Name: (Describe what you install on the Ubuntu server (Wiki.Js, ARK server, Minecraft, Zabbix, etc).
 
 ---
 
@@ -260,17 +263,17 @@ Settings:
 ---
 
  -Disk Tab:
-  Disk Size (GiB): (set based on the requirement of whatever software we are installing) i.e Wiki.Js reccomends at least 1gig of storage and Ubuntu Server requires 20gigs so we should have no less than 22gigs. (I would reccomend going up at least 5gigs for small installs and at least double for other applications where you know you will be uploading lots of content i.e. mods, pictures, user accounts, etc. 
+    Disk Size (GiB): (set based on the requirement of whatever software we are installing), i.e., Wiki.Js recommends at least 1gig of storage, and Ubuntu Server requires 20gigs, so we should have no less than 22gigs. (I would recommend going up at least 5 gigs for small installs and at least double for other applications where you know you will be uploading lots of content, i.e., mods, pictures, user accounts, etc. 
 
 ---
 
  -CPU Tab:
-  Again, this will be based on the requirements of what you are installing. Wiki.js requires 2 cores and so does Ubuntu Server so we will select 2 cores. 
+  Again, this will be based on the requirements of what you are installing. Wiki.js requires 2 cores and Ubuntu Server so that we will select 2 cores. 
 
 ---
 
  -Memory Tab: 
-  Again, based on system requirements. Wiki.js wants 2gig of ram, Ubuntu Server reccomends 4gigs of ram but you can honestly get away with 1-2 depending on what you are installing. In our case for Wiki.js we are going to keep 2gigs.
+  Again, based on system requirements. Wiki.js wants 2 gigs of RAM. Ubuntu Server recommends 4 gigs of RAM, but you can get away with 1-2, depending on your installation. In our case, for Wiki.js, we are going to keep 2gigs.
 
 ---
 
@@ -280,7 +283,7 @@ Settings:
 ---
 
  -Confirm Tab: 
-  Please check over all your settigns and click *finish*. 
+  Please check over all your settings and click *finish*. 
 
 ---
 ## Installing Ubuntu Server on your Proxmox VM
@@ -305,7 +308,7 @@ Settings:
 <a href="/images/EP4_firstvmubuntu/5_select_ubuntu_server.png" class="image-expand">
     <img src="/images/EP4_firstvmubuntu/5_select_ubuntu_server.png" alt="Description of your image">
 </a>
-6. We can leave this default becasue most of you will be using DHCP. 
+6. We can leave this default because most of you will use DHCP. 
 <a href="/images/EP4_firstvmubuntu/6_configure_interface.png" class="image-expand">
     <img src="/images/EP4_firstvmubuntu/6_configure_interface.png" alt="Description of your image">
 </a>
@@ -317,11 +320,11 @@ Settings:
 <a href="/images/EP4_firstvmubuntu/8_checking_mirror.png" class="image-expand">
     <img src="/images/EP4_firstvmubuntu/8_checking_mirror.png" alt="Description of your image">
 </a>
-9. In the case of Proxmox we are creating a virtual machine, and during the setup of our Proxmox VM we set the disk drive size, meaning our VM can only see the virtualized partitioned disk drive (this prevents you from over writing any other VM disk partitons on your server). You are good to go ahead and use the WHOLE disk drive in this case.
+9. In the case of Proxmox, we are creating a virtual machine, and during the setup of our Proxmox VM, we set the disk drive size, meaning our VM can only see the virtualized partitioned disk drive (this prevents you from overwriting any other VM disk partitions on your server). You are good to go ahead and use the WHOLE disk drive in this case.
 <a href="/images/EP4_firstvmubuntu/9_use_entire_disk.png" class="image-expand">
     <img src="/images/EP4_firstvmubuntu/9_use_entire_disk.png" alt="Description of your image">
 </a>
-10. This is just giving you a breakdown of that paritioned disk and how much space is going to each resource.
+10. This is just giving you a breakdown of that partitioned disk and how much space is going to each resource.
 <a href="/images/EP4_firstvmubuntu/10_file_overview.png" class="image-expand">
     <img src="/images/EP4_firstvmubuntu/10_file_overview.png" alt="Description of your image">
 </a>

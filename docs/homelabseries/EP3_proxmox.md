@@ -1,22 +1,58 @@
-# Topic: Proxmox Installation Guide
+# Topic Proxmox Installation Guide
 
 ## Introduction:
-This section discusses what will be accomplished in this walkthrough.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informative Section</title>
+<style>
+.informative-section {
+    background-color: #8CD2F4; /* light blue background color */
+    color: black; /* Text color to contrast with dark background */
+    padding: 20px; /* Padding inside the box */
+    border-radius: 10px; /* Rounded corners */
+    display: flex;
+    align-items: center;
+}
+.circle-emoji {
+    width: 50px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 20px;
+    color: #231F20; /* Dark gray color for the exclamation mark */
+}
+</style>
+</head>
+<body>
 
-## How to use this guide:
-TechTouch Labs handles teaching very differently compared to other industry standards. This is because we believe they truly lack in teaching you. There will be very lengthy commands, and for the sake of time, go ahead and copy and paste those commands. HOWEVER, please read what the command does or you will never learn. Linux is notorious for using abbreviations, and without reading what it does, you will never understand what you are actually configuring.
+<div class="informative-section">
+    <div class="circle-emoji">!</div>
+    <p>Please take special note that we “skipped” the switch; for the purpose of this course, we are using an unmanaged switch. For this course, we are using the switch to simply interconnect all our homelab devices. </p>
+</div>
+
+</body>
+</html>
+In this episode, we will cover the installation of Proxmox on your server, mini-PC, SBC, etc. (whatever you have chosen to use as your device to host your services). 
+
 ## Topology
-A network topology is the physical and logical arrangement of nodes and connections in a network:
-
 <a href="/images/EP3_proxmox/topology_proxmox.png" class="image-expand">
     <img src="/images/EP3_proxmox/topology_proxmox.png" alt="Description of your image">
 </a>
 
 ## Required Items:
-The Proxmox machine being used in this guide: [N95 mini pc](https://amzn.to/49Ul82n) (I highly recommend you go with something that has 16gb of RAM or more).
+The Proxmox machine being used in this guide: [N95 mini pc](https://amzn.to/49Ul82n) (I highly recommend you go with something that has 16gb of RAM or more) Servers are RAM heavy, the more you have the better!.
 Recommended: [Beelink Mini PC SER5](https://amzn.to/3vdgbTe)
 Alternative: [Beelink U59 dual ethernet](https://amzn.to/3PloqUa)
+
 - [x] Proxmox Appliance (some type of PC that you are okay with running 24/7)
+
 - [x] USB thumb Drive
 ## Downloading Proxmox (bootable USB):
 The start of the tutorial:
