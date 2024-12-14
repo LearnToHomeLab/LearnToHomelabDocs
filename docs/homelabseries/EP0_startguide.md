@@ -1,5 +1,8 @@
 # Welcome
 LTH is glad to see you here! This free course focuses on beginners and newcomers to IT, Cyber Security, and Network Engineering prospects (and really anyone interested in IT or self-hosting services)!
+
+[Our YouTube videos accompany this series; click here to find that series on YouTube!](https://youtube.com/playlist?list=PLAvgoEDVC5qFPNbsRBT-naqnsZwxIcqQ6&si=Pn6K2clYE_zLVs5C)
+
 ## Introduction
 What does this course encompass and it is right for me is a question most of you are asking. You may even be asking yourself if you have enough knowledge to be successful in this course, and the answer is yes you do. 
 
@@ -85,6 +88,10 @@ In this case, our topology does both; we can see the arrows from the public inte
 <a href="/images/start guide/course flow.png" class="image-expand">
     <img src="/images/start guide/course flow.png" alt="Description of your image">
 </a>
+Here is what that topology looks like in physical form without the stage 2 servers.
+<a href="/images/EP2_switch/switch.png" class="image-expand">
+    <img src="/images/EP2_switch/switch.png" alt="Description of your image">
+</a>
 
 Okay before we get down to the course content it is important to understand that there are certain things you are not **REQUIRED** to do. What do we mean by this? HomeLabs are about learning and catering towards what you want, however some people may expose things to the internet or use a virtual private network (VPN) that will allow them access to their internal resources externally. **In this course we will cover some of that but will NOT be making services public through the firewall. Best practice will be to use a VPN tunnel and that is what is covered in this course. Because of this, the Firewall video/device is not required.**
 
@@ -92,11 +99,13 @@ I know budget is always of concern for anyone, so again pay attention to what is
 
 ## Not required
 1. Opnsense/PFsense Firewall (Episode - 3)
+2. Stage 2, as indicated in the topology breakdown. A NAS backup and fail-over machine are solely for people learning more advanced technologies and capabilities. They are not required for the main purpose of this course.
 
 ## Order of Content
-1. Intro video
-2. SSH Setup and Note Taking
-3. [Firewall](/en/Homelab_series/Firewall_install_pfsense_opnsense)
-4. [Proxmox](/en/Homelab_series/Proxmox_Installation_Guide)
+0. [Getting started (Intro video)](https://www.youtube.com/watch?v=K9gXMoPrPA0&list=PLAvgoEDVC5qFPNbsRBT-naqnsZwxIcqQ6&index=1) 
+1. [Note taking](/homelabseries/EP1_notekeeping/)
+2. [Installing your switch](/homelabseries/EP2_switch/)
+3. [Firewall](/homelabseries/EP3_firewall/)
+4. [Proxmox](/homelabseries/EP4_proxmox/)
 5. Setting up our first VM (Ubuntu)
 6. DNS/PiHole(You could say this is an optional video too)

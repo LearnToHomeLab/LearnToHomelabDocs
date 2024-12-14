@@ -80,9 +80,10 @@ nav:
   - Homelab Series:
       - EP 0 - Start Guide: homelabseries/EP0_startguide.md
       - EP 1 - Note Keeping: homelabseries/EP1_notekeeping.md
-      - EP 2 - Firewall Install: homelabseries/EP2_firewall.md
-      - EP 3 - Proxmox Install: homelabseries/EP3_proxmox.md
-      - EP 4 - Setting up your first VM: homelabseries/EP4_firstvmubuntu.md
+      - EP 2 - Switch Install: homelabseries/EP2_switch.md
+      - EP 3 - Firewall Install: homelabseries/EP3_firewall.md
+      - EP 4 - Proxmox Install: homelabseries/EP4_proxmox.md
+      - EP 5 - Setting up your first VM: homelabseries/EP5_firstvmubuntu.md
       # - Learn to Homelab: homelabseries/LearntoHomelab.md #anything at this level will show the blue text as a option on the side and the red will link to the page content created
       # - EP5_Test: homelabseries/EP5_test.md
 
