@@ -2,6 +2,9 @@
 LTH is glad to see you here! This free course focuses on beginners and newcomers to IT, Cyber Security, and Network Engineering prospects (and really anyone interested in IT or self-hosting services)!
 
 [Our YouTube videos accompany this series; click here to find that series on YouTube!](https://youtube.com/playlist?list=PLAvgoEDVC5qFPNbsRBT-naqnsZwxIcqQ6&si=Pn6K2clYE_zLVs5C)
+<div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/K9gXMoPrPA0?si=i-yFKPqx8_fom9Xv" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Introduction
 What does this course encompass and it is right for me is a question most of you are asking. You may even be asking yourself if you have enough knowledge to be successful in this course, and the answer is yes you do. 

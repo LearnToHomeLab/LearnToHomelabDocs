@@ -25,6 +25,9 @@
 
 </body>
 </html>
+<div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OiXauud3EUQ?si=MG3fV9DbhjNgS7jt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 ## Introduction:
 If you have found yourself here it is because you want to install an enterprise-grade firewall, and we will do just that. PfSense/OPNsense allows for a reliable network backbone, routing, VPN connections, security features, failover scenarios, and inter-VLAN routing. This tutorial is part 2 of our HomeLab series, teaching you how to maintain your own "enterprise" style network at home. The advantage of a homelab allows for real-world experience you can put on your resume and speak to in an interview when asked questions related to your technical expertise. 
 
