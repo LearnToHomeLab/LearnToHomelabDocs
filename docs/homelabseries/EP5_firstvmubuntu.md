@@ -359,9 +359,18 @@ Settings:
     <img src="/images/EP4_firstvmubuntu/17_log_in.png" alt="Description of your image">
 </a> 
   
-Now all you need to do is add this VM in Solarwinds Putty and connect to it over SSH:
-<a href="/images/EP4_firstvmubuntu/2024-03-30_13-28-45.gif" class="image-expand">
-    <img src="/images/EP4_firstvmubuntu/2024-03-30_13-28-45.gif" alt="Description of your image">
+1. If you are on Windows 11 or newer we reccomend using Windows command line (CLI) to SSH into your machines, this allows you to copy and paste. 
+2. You can also login with SSH on Linux. 
+3. If you are on Windows 10 or prior we reccomend using [Putty](https://www.putty.org/)
+
+The command to use SSH in the CLI is:
+```ssh username@server_ip_address```
+
+Example:
+```ssh learn@192.168.1.1```
+
+<a href="/images/EP4_firstvmubuntu/windows11clissh.png" class="image-expand">
+    <img src="/images/EP4_firstvmubuntu/windows11clissh.png" alt="Description of your image">
 </a> 
   
 Using SSH is important for future videos because it allows you to copy and paste content into your CLI and important data from your local machine to your VM.

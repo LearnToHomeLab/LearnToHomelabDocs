@@ -1,44 +1,7 @@
 # Topic Proxmox Installation Guide
 
 ## Introduction:
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Informative Section</title>
-<style>
-.informative-section {
-    background-color: #8CD2F4; /* light blue background color */
-    color: black; /* Text color to contrast with dark background */
-    padding: 20px; /* Padding inside the box */
-    border-radius: 10px; /* Rounded corners */
-    display: flex;
-    align-items: center;
-}
-.circle-emoji {
-    width: 50px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 15px;
-    font-size: 20px;
-    color: #231F20; /* Dark gray color for the exclamation mark */
-}
-</style>
-</head>
-<body>
 
-<div class="informative-section">
-    <div class="circle-emoji">!</div>
-    <p>Please take special note that we “skipped” the switch; for the purpose of this course, we are using an unmanaged switch. For this course, we are using the switch to simply interconnect all our homelab devices. </p>
-</div>
-
-</body>
-</html>
 In this episode, we will cover the installation of Proxmox on your server, mini-PC, SBC, etc. (whatever you have chosen to use as your device to host your services). 
 
 ## Topology
@@ -72,7 +35,7 @@ Copy and paste the location of the file into the same .txt document.
 Use the following command with your respective version of Proxmox to validate the integrity of the file against their good known hash.
 EXAMPLE:
 ```
-certUtil -hashfile C:\Users\TechTouch\Downloads\proxmox-ve_8.1-2.iso SHA256
+certUtil -hashfile C:\Users\learn\Downloads\proxmox-ve_8.1-2.iso SHA256
 ```
 Use:
 ```
@@ -128,7 +91,7 @@ You will use **root** as the username, and then you will use whatever password y
 <a href="/images/EP3_proxmox/p16.png" class="image-expand">
     <img src="/images/EP3_proxmox/p16.png" alt="Description of your image">
 </a>
-You have now succesfully installed Proxmox for server and container virtualization! Please move to EP 3 of the homelab series where we will cover setting up a complete enterprise grade network that will help you gain the hands on experience required to work in the IT field or with a MSP.
+You have now succesfully installed Proxmox for server and container virtualization! Please move to EP 5 where we will cover setting up a your first virtual machine.
 <a href="/images/EP3_proxmox/p17.png" class="image-expand">
     <img src="/images/EP3_proxmox/p17.png" alt="Description of your image">
 </a>
