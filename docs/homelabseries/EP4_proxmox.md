@@ -3,6 +3,9 @@
 ## Introduction:
 
 In this episode, we will cover the installation of Proxmox on your server, mini-PC, SBC, etc. (whatever you have chosen to use as your device to host your services). 
+<div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sB_7MeaqaI0?si=r6qT3PRIZkEBnCJh" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Topology
 <a href="/images/EP3_proxmox/topology_proxmox.png" class="image-expand">
