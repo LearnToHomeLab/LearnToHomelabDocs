@@ -110,5 +110,5 @@ I know budget is always of concern for anyone, so again pay attention to what is
 2. [Installing your switch](/homelabseries/EP2_switch/)
 3. [Firewall](/homelabseries/EP3_firewall/)
 4. [Proxmox](/homelabseries/EP4_proxmox/)
-5. Setting up our first VM (Ubuntu)
-6. DNS/PiHole(You could say this is an optional video too)
+5. [Setting up our first VM (Ubuntu)](/homelabseries/EP5_firstvmubuntu/)
+6. [First Video Game Server (minecraft)](/homelabseries/EP6_firstvideogameserver)
