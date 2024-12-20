@@ -39,6 +39,10 @@ This episode will go over how to setup your first virtual machine (VM) inside Pr
 
 </body>
 </html>
+--------------------
+<div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RJdRgJFiupo?si=PcHcDpMwlQiwQjQv" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Installing your VM 
   

@@ -40,6 +40,10 @@ computers more than 13 years ago now because of video game server hosting, it is
 
 </body>
 </html>
+---------------------
+<div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/stbQAb5OgV0?si=IoARGitCJpgcJYWl" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Grabbing everything you need to get started
 First you need to access [PlayIt.GG](https://playit.gg/).
