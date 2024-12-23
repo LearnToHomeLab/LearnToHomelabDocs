@@ -112,3 +112,4 @@ I know budget is always of concern for anyone, so again pay attention to what is
 4. [Proxmox](/homelabseries/EP4_proxmox/)
 5. [Setting up our first VM (Ubuntu)](/homelabseries/EP5_firstvmubuntu/)
 6. [First Video Game Server (minecraft)](/homelabseries/EP6_firstvideogameserver)
+7. [Setup Pi-Hole with Proxmox](/homelabseries/EP7_setuppihole)
