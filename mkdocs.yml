@@ -85,6 +85,7 @@ nav:
       - EP 4 - Proxmox Install: homelabseries/EP4_proxmox.md
       - EP 5 - Setting up your first VM: homelabseries/EP5_firstvmubuntu.md
       - EP 6 - Setting up your first Video Game Server (Minecraft Example): homelabseries/EP6_firstvideogameserver.md
+      - EP 7 - Set up Pihole with Proxmox: homelabseries/EP7_setuppihole.md
       # - Learn to Homelab: homelabseries/LearntoHomelab.md #anything at this level will show the blue text as a option on the side and the red will link to the page content created
       # - EP5_Test: homelabseries/EP5_test.md
 
