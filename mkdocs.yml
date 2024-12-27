@@ -88,6 +88,8 @@ nav:
       - EP 7 - Set up Pihole with Proxmox: homelabseries/EP7_setuppihole.md  
   - Hardware Reviews:
       - EP 0 - Unifi Flex Mini 2.5G: hardwarereview/ep0_unififlex2gig.md
+  - Software Tutorials:
+      - EP 0 - Unbound DNS and Ad Blocker in OPNsense:  SoftwareVideoNotes/EP0_UnboundDNS.md
 
 copyright: |
   &copy; 2024 <a href="https://www.youtube.com/channel/UChC4ztzEchbm0nxIhw5zyog"  target="_blank" rel="noopener">Learn To Homelab</a>
