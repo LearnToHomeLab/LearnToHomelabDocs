@@ -86,6 +86,7 @@ nav:
       - EP 5 - Setting up your first VM: homelabseries/EP5_firstvmubuntu.md
       - EP 6 - Setting up your first Video Game Server (Minecraft Example): homelabseries/EP6_firstvideogameserver.md
       - EP 7 - Set up Pihole with Proxmox: homelabseries/EP7_setuppihole.md  
+      - EP 8 - NextCloud with Proxmox: homelabseries/EP8_nextcloud.md
   - Hardware Reviews:
       - EP 0 - Unifi Flex Mini 2.5G: hardwarereview/ep0_unififlex2gig.md
   - Software Tutorials:
