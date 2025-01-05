@@ -56,9 +56,8 @@ You are making it so your two geographically separate devices appear to be on on
 ## Our Video on this topic
 
 <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/egrsupCSw40?si=c2Zh1JYVTpytQzn2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bsdxcfVt6vg?si=IahsvHM7HZ5yDjf4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
 
 ## Create a Proxmox VM
 
