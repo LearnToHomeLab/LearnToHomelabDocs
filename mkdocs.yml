@@ -88,6 +88,7 @@ nav:
       - EP 7 - Set up Pihole with Proxmox: homelabseries/EP7_setuppihole.md  
       - EP 8 - NextCloud Install with Proxmox: homelabseries/EP8_nextcloud.md
       - EP 9 - Tailscale Install with Proxmox: homelabseries/EP9_tailscale.md
+      - EP 10 - Zabbix Server Install with Proxmox: homelabseries/EP10_zabbixserver.md
   - Hardware Reviews:
       - EP 0 - Unifi Flex Mini 2.5G: hardwarereview/ep0_unififlex2gig.md
   - Software Tutorials:

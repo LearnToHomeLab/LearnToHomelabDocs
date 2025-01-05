@@ -115,3 +115,4 @@ I know budget is always of concern for anyone, so again pay attention to what is
 7. [Setup Pi-Hole with Proxmox](/homelabseries/EP7_setuppihole)
 8. [Setup NextCloud with Proxmox](/homelabseries/EP8_nextcloud)
 9. [Setup Tailscale with Proxmox](/homelabseries/EP9_tailscale)
+10. [Zabbix Server With Proxmox](/homelabseries/EP10_zabbixserver)
