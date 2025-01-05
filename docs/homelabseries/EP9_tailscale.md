@@ -56,7 +56,7 @@ You are making it so your two geographically separate devices appear to be on on
 ## Our Video on this topic
 
 <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/WQBb8OG77m0?si=ZJpn6OGJcfxYNtJx" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/egrsupCSw40?si=c2Zh1JYVTpytQzn2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 
@@ -146,6 +146,51 @@ In our case we are going to use for personal use (which is true) but it is also 
 <a href="/images/EP9_tailscale/Still 2024-12-31 194421_1.10.2.png" class="image-expand">
     <img src="/images/EP9_tailscale/Still 2024-12-31 194421_1.10.2.png" alt="Description of your image">
 </a>
+
+## Make Tailscale an Exit Node for LAN access
+
+There is one more step we need to perform by SSHing into our Tailscale server. We need to make it an exit node, this allows your remote connections to exit your Tailscale VM and access the other VMs on your home network.
+
+There are three commands we need to type in to make our Tailscale VM the exit node:
+
+1. Advertise a device as an exit node config file:
+
+```
+echo 'net.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.d/99-tailscale.conf
+echo 'net.ipv6.conf.all.forwarding = 1' | sudo tee -a /etc/sysctl.d/99-tailscale.conf
+sudo sysctl -p /etc/sysctl.d/99-tailscale.conf
+```
+
+2. Then we need to advertise the exit node by restarting the tailscale service:
+
+```
+sudo tailscale set --advertise-exit-node
+sudo tailscale up
+```
+
+3. Then we need to advertise our route:
+
+```
+sudo tailscale up --advertise-routes=<your LAN network IP range> --reset
+```
+
+<a href="/images/EP9_tailscale/Still 2025-01-04 172122_1.12.3.png" class="image-expand">
+    <img src="/images/EP9_tailscale/Still 2025-01-04 172122_1.12.3.png" alt="Description of your image">
+</a>
+
+After that you need to go login to Tailscales site and find your VM now assigned as an exit node, click the three dots <kbd>...</kbd> and select **Edit route settings**
+
+<a href="/images/EP9_tailscale/Still 2025-01-04 172122_1.12.4.png" class="image-expand">
+    <img src="/images/EP9_tailscale/Still 2025-01-04 172122_1.12.4.png" alt="Description of your image">
+</a>
+
+After that, just select the two boxes and you have set up your exit node.
+
+<a href="/images/EP9_tailscale/Still 2025-01-04 172122_1.12.5.png" class="image-expand">
+    <img src="/images/EP9_tailscale/Still 2025-01-04 172122_1.12.5.png" alt="Description of your image">
+</a>
+
+## Adding other devices to your MESH network for remote access
 
 Now you need to add a device that will create your mesh Tailscale network. In our example we have downloaded Tailscale on our phone and will connect back to our network through Tailscale to upload pictures to our Nextcloud backup server.
 
