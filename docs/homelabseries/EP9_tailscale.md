@@ -160,18 +160,16 @@ echo 'net.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.d/99-tailscale.conf
 echo 'net.ipv6.conf.all.forwarding = 1' | sudo tee -a /etc/sysctl.d/99-tailscale.conf
 sudo sysctl -p /etc/sysctl.d/99-tailscale.conf
 ```
-
 2. Then we need to advertise the exit node by restarting the tailscale service:
 
 ```
 sudo tailscale set --advertise-exit-node
 sudo tailscale up
 ```
-
-3. Then we need to advertise our route:
+3. Then we need to advertise our route including your networks CIDR notation:
 
 ```
-sudo tailscale up --advertise-routes=<your LAN network IP range> --reset
+sudo tailscale up --advertise-routes=<your LAN network IP range>/24 --reset
 ```
 
 <a href="/images/EP9_tailscale/Still 2025-01-04 172122_1.12.3.png" class="image-expand">
