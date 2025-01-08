@@ -6,7 +6,9 @@ In this episode we are going to be covering how to setup a Zabbix Agent specific
 
 If you want to know how to setup the Zabbix server please find our article/video on that [here](/homelabseries/EP10_zabbixserver)
 
-
+<div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JYr1iXsgra8?si=epf_2LG90cJUi1Qd" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 
 ## Getting started
