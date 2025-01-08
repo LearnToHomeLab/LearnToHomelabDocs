@@ -89,10 +89,11 @@ nav:
       - EP 8 - NextCloud Install with Proxmox: homelabseries/EP8_nextcloud.md
       - EP 9 - Tailscale Install with Proxmox: homelabseries/EP9_tailscale.md
       - EP 10 - Zabbix Server Install with Proxmox: homelabseries/EP10_zabbixserver.md
+      - EP 11 - Zabbix Agent Install on a VM: homelabseries/EP11_zabbixagent.md
   - Hardware Reviews:
       - EP 0 - Unifi Flex Mini 2.5G: hardwarereview/ep0_unififlex2gig.md
   - Software Tutorials:
       - EP 0 - Unbound DNS and Ad Blocker in OPNsense:  SoftwareVideoNotes/EP0_UnboundDNS.md
 
 copyright: |
-  &copy; 2024 <a href="https://www.youtube.com/channel/UChC4ztzEchbm0nxIhw5zyog"  target="_blank" rel="noopener">Learn To Homelab</a>
+  &copy; 2024-2025 <a href="https://www.youtube.com/channel/UChC4ztzEchbm0nxIhw5zyog"  target="_blank" rel="noopener">Learn To Homelab</a>

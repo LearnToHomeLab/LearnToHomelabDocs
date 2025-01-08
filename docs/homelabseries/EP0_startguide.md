@@ -116,3 +116,4 @@ I know budget is always of concern for anyone, so again pay attention to what is
 8. [Setup NextCloud with Proxmox](/homelabseries/EP8_nextcloud)
 9. [Setup Tailscale with Proxmox](/homelabseries/EP9_tailscale)
 10. [Zabbix Server With Proxmox](/homelabseries/EP10_zabbixserver)
+11. [Zabbix Agent Install on a VM](/homelabseries/EP11_zabbixagent)
