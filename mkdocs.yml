@@ -90,6 +90,7 @@ nav:
       - EP 9 - Tailscale Install with Proxmox: homelabseries/EP9_tailscale.md
       - EP 10 - Zabbix Server Install with Proxmox: homelabseries/EP10_zabbixserver.md
       - EP 11 - Zabbix Agent Install on a VM: homelabseries/EP11_zabbixagent.md
+      - EP 12 - Zabbix - How to Create Dashboards: homelabseries/EP12_zabbixdashboards.md
   - Hardware Reviews:
       - EP 0 - Unifi Flex Mini 2.5G: hardwarereview/ep0_unififlex2gig.md
   - Software Tutorials:
