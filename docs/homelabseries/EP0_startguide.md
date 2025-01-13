@@ -118,3 +118,5 @@ I know budget is always of concern for anyone, so again pay attention to what is
 10. [Zabbix Server With Proxmox](/homelabseries/EP10_zabbixserver)
 11. [Zabbix Agent Install on a VM](/homelabseries/EP11_zabbixagent)
 12. [Zabbix Dashboard Creation](/homelabseries/EP12_zabbixdashboards)
+
+This series continues but these are the fundamental episodes of the series. If you would like to find more content related to this series, please the column on the left. 
