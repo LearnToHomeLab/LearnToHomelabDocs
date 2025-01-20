@@ -93,6 +93,7 @@ nav:
       - EP 12 - Zabbix - How to Create Dashboards: homelabseries/EP12_zabbixdashboards.md
       - EP 13 - How to Install The Homarr Dashboard: homelabseries/EP13_homarr.md
       - EP 14 - Get Proxmox Stats In Homarrs Dashboard: homelabseries/EP14_homarr.md
+      - EP 15 - How to Install The Wazuh Server: homelabseries/EP15_wazuhserver.md
   - Hardware Reviews:
       - EP 0 - Unifi Flex Mini 2.5G: hardwarereview/ep0_unififlex2gig.md
   - Software Tutorials:
