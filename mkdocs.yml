@@ -94,6 +94,7 @@ nav:
       - EP 13 - How to Install The Homarr Dashboard: homelabseries/EP13_homarr.md
       - EP 14 - Get Proxmox Stats In Homarrs Dashboard: homelabseries/EP14_homarr.md
       - EP 15 - How to Install The Wazuh Server: homelabseries/EP15_wazuhserver.md
+      - EP 16 - Install the Wazuh Agent: homelabseries/EP16_wazuhagent.md
   - Hardware Reviews:
       - EP 0 - Unifi Flex Mini 2.5G: hardwarereview/ep0_unififlex2gig.md
   - Software Tutorials:

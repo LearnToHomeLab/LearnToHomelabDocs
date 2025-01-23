@@ -1,6 +1,10 @@
 # How to Install The Wazuh Server Dependency
 In this episode we will cover how to install the Wazuh server "Agent". Wazuh is a free, open-source security platform that protects data from security threats. It combines Security Information and Event Management (SIEM) and Extended Detection and Response (XDR) capabilities. 
 
+<div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wC4EscsMwyk?si=t6s5KZRHHOx_jpxF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## Useful links/Information
 
 1. If you want to understand how Wazuh works and all the components behind scenes read about it [here](https://documentation.wazuh.com/current/proof-of-concept-guide/index.html)
