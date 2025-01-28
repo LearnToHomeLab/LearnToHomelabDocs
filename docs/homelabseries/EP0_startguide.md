@@ -120,5 +120,6 @@ I know budget is always of concern for anyone, so again pay attention to what is
 12. [Zabbix Dashboard Creation](/homelabseries/EP12_zabbixdashboards)
 13. [Install the Wazuh Server](/homelabseries/EP15_wazuhserver)
 14. [Install the Wazuh Agent](/homelabseries/EP16_wazuhagent)
+15. [Install TrueNas Scale](/homelabseries/EP17_truenasscale)
 
 This series continues but these are the fundamental episodes of the series. If you would like to find more content related to this series, please the column on the left. 
