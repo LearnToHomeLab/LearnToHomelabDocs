@@ -14,13 +14,13 @@ Here is where you will go to download Packet Tracer: [download](https://www.neta
 You will download them by selecting the episode:
 
 <a href="/BasicNetworkingimages/EP1_BasicNetworking/This Repo holds content for Basic Cisco Netw.png" class="image-expand">
-    <img src="/BasicNetworkingimages/EP1_BasicNetworking/This Repo holds content for Basic Cisco Netw.png" alt="Description of your image">
+    <img src="/images/EP1_BasicNetworking/This Repo holds content for Basic Cisco Netw.png" alt="Description of your image">
 </a>
 
 Then by clicking raw download, after that double click it in your downloads folder and it will open it automatically in Packet tracer:
 
 <a href="/BasicNetworkingimages/EP1_BasicNetworking/LearnToHomeLab_Basi.png" class="image-expand">
-    <img src="/BasicNetworkingimages/EP1_BasicNetworking/LearnToHomeLab_Basi.png" alt="Description of your image">
+    <img src="/images/EP1_BasicNetworking/LearnToHomeLab_Basi.png" alt="Description of your image">
 </a>
 
 ## Getting Started With Packet Tracer
@@ -33,7 +33,7 @@ Then by clicking raw download, after that double click it in your downloads fold
 Here is a our Topology 
 
 <a href="/BasicNetworkingimages/EP1_BasicNetworking/nocables.png" class="image-expand">
-    <img src="/BasicNetworkingimages/EP1_BasicNetworking/nocables.png" alt="Description of your image">
+    <img src="/images/EP1_BasicNetworking/nocables.png" alt="Description of your image">
 </a>
 
 First things first we need to connect all our devices like shown below. 
@@ -81,7 +81,7 @@ First things first we need to connect all our devices like shown below.
 </html>
 
 <a href="/BasicNetworkingimages/EP1_BasicNetworking/cabledtopology.png" class="image-expand">
-    <img src="/BasicNetworkingimages/EP1_BasicNetworking/cabledtopology.png" alt="Description of your image">
+    <img src="/images/EP1_BasicNetworking/cabledtopology.png" alt="Description of your image">
 </a>
 <!DOCTYPE html>
 <html lang="en">
