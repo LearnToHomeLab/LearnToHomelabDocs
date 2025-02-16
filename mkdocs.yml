@@ -98,6 +98,7 @@ nav:
       - EP 17 - Install Truenas Scale: homelabseries/EP17_truenasscale.md
       - EP 18 - Install NextCloud on TrueNas: homelabseries/EP18_trunasnextcloud.md
       - EP 19 - Wazuh Discord Alerts: homelabseries/EP19_wazuhdiscordalerts.md
+      - EP 20 - Proxmoc Cluster Setup: homelabseries/EP20_ProxmoxClustering.md
   - Basic Networking:
       - EP 1 - Configuring Cisco Switches: BasicNetworking/EP1_switchconfiguration.md
   - Hardware Reviews:
