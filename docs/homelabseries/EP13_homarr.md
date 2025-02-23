@@ -1,5 +1,11 @@
 # How to Install The Homarr Dashboard 
 
+<a href="/images/EP13_homarr/homarr outdated.png" class="image-expand">
+    <img src="/images/EP13_homarr/homarr outdated.png" alt="Description of your image">
+</a>
+
+[EP 22 - Homarr 1.0 Install/Upgrade:](/homelabseries/EP22_homarr1.0upgrade)
+
 
 ## Introduction
 

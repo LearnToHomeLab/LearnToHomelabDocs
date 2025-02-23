@@ -1,5 +1,10 @@
 # How to Install Proxmox Statistics on The Homarr Dashboard
 
+<a href="/images/EP14_homarr/homarr outdated.png" class="image-expand">
+    <img src="/images/EP14_homarr/homarr outdated.png" alt="Description of your image">
+</a>
+
+[EP 22 - Homarr 1.0 Install/Upgrade:](/homelabseries/EP22_homarr1.0upgrade)
 
 <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/aSRsk6VSVg4?si=HK3FFg47-WooiwdP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
