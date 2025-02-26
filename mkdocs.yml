@@ -101,6 +101,7 @@ nav:
       - EP 20 - Proxmox Cluster Setup: homelabseries/EP20_ProxmoxClustering.md
       - EP 21 - Proxmox Live VM Migration (ceph): homelabseries/EP21_ProxmoxCeph.md
       - EP 22 - Homarr 1.0 Install/Upgrade: homelabseries/EP22_homarr1.0upgrade.md
+      - EP 23 - Note Taking with NextCloud: homelabseries/EP23_notesinnextcloud.md
   - Basic Networking:
       - EP 1 - Configuring Cisco Switches: BasicNetworking/EP1_switchconfiguration.md
   - Hardware Reviews:
