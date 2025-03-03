@@ -102,6 +102,7 @@ nav:
       - EP 21 - Proxmox Live VM Migration (ceph): homelabseries/EP21_ProxmoxCeph.md
       - EP 22 - Homarr 1.0 Install/Upgrade: homelabseries/EP22_homarr1.0upgrade.md
       - EP 23 - Note Taking with NextCloud: homelabseries/EP23_notesinnextcloud.md
+      - EP 24 - JellyFin on TrueNas:  homelabseries/EP24_jellyFin.md
   - Basic Networking:
       - EP 1 - Configuring Cisco Switches: BasicNetworking/EP1_switchconfiguration.md
   - Hardware Reviews:
