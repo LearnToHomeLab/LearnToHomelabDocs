@@ -103,6 +103,7 @@ nav:
       - EP 22 - Homarr 1.0 Install/Upgrade: homelabseries/EP22_homarr1.0upgrade.md
       - EP 23 - Note Taking with NextCloud: homelabseries/EP23_notesinnextcloud.md
       - EP 24 - JellyFin on TrueNas:  homelabseries/EP24_jellyFin.md
+      - EP 25 - Pterodactyl Game Panel: homelabseries/EP25_Pterodactylinstall.md
   - Basic Networking:
       - EP 1 - Configuring Cisco Switches: BasicNetworking/EP1_switchconfiguration.md
   - Hardware Reviews:
