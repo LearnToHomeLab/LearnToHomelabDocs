@@ -991,6 +991,38 @@ Now you can see we have the Proxmox stats on our dashboard!
     <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.31.1.png" alt="Description of your image">
 </a>
 
+## Updating Homarr 1.0
+
+To update, navigate to the directory with the *docker-compose.yaml* located. (This will need to be done using the sudo command or becoming the super user with *sudo su*)
+
+Stop Homarr using 
+
+```
+docker compose down
+```
+
+Pull the newest image of Homarr using 
+
+```
+docker compose pull
+```
+
+Start Homarr again using the below command. (-d for detached mode - start in background)
+
+```
+docker compose up -d 
+```
+
+Delete the old image using (Warning: this also removes you other unused images - not just Homarr)
+
+```
+docker image prune
+``` 
+
+<a href="/images/EP22_homarr1.0upgrade/homarr update.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/homarr update.png" alt="Description of your image">
+</a>
+
 ## Follow Us on Social Media
 
 [YouTube](https://www.youtube.com/@learntohomelab)
