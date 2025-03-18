@@ -218,6 +218,8 @@ We are in!
 
 [Discord](https://discord.gg/6MsHSJWZpH)
 
+[Patreon](https://www.patreon.com/c/learntohomelab)
+
 [Reddit](https://www.reddit.com/r/learntohomelab/)
 
 [Rumble](https://rumble.com/c/c-7585051)

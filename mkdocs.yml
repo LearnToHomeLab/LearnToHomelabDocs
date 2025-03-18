@@ -105,6 +105,7 @@ nav:
       - EP 24 - JellyFin on TrueNas:  homelabseries/EP24_jellyFin.md
       - EP 25 - Pterodactyl Game Panel: homelabseries/EP25_Pterodactylinstall.md
       - EP 26 - Nginx Proxy Manager: homelabseries/EP26_nginxproxymanagerssl.md
+      - EP 27 - Install Docmost: homelabseries/EP27_docmost.md
   - Basic Networking:
       - EP 1 - Configuring Cisco Switches: BasicNetworking/EP1_switchconfiguration.md
   - Hardware Reviews:
