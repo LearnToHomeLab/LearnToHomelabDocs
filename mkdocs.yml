@@ -107,6 +107,7 @@ nav:
       - EP 26 - Nginx Proxy Manager: homelabseries/EP26_nginxproxymanagerssl.md
       - EP 27 - Install Docmost: homelabseries/EP27_docmost.md
       - EP 28 - Install Vaultwarden: homelabseries/EP28_vaultwarden.md
+      - EP 29 - Install Cockpit: homelabseries/EP29_cockpit.md
   - Basic Networking:
       - EP 1 - Configuring Cisco Switches: BasicNetworking/EP1_switchconfiguration.md
   - Hardware Reviews:
