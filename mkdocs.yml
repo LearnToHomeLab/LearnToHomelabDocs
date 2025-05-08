@@ -108,6 +108,7 @@ nav:
       - EP 27 - Install Docmost: homelabseries/EP27_docmost.md
       - EP 28 - Install Vaultwarden: homelabseries/EP28_vaultwarden.md
       - EP 29 - Install Cockpit: homelabseries/EP29_cockpit.md
+      - EP 30 - Actual Budget: homelabseries/EP30_actualbudget.md
   - Basic Networking:
       - EP 1 - Configuring Cisco Switches: BasicNetworking/EP1_switchconfiguration.md
   - Hardware Reviews:
