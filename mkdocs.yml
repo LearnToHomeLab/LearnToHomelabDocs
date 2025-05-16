@@ -109,12 +109,14 @@ nav:
       - EP 28 - Install Vaultwarden: homelabseries/EP28_vaultwarden.md
       - EP 29 - Install Cockpit: homelabseries/EP29_cockpit.md
       - EP 30 - Actual Budget: homelabseries/EP30_actualbudget.md
+      
   - Basic Networking:
       - EP 1 - Configuring Cisco Switches: BasicNetworking/EP1_switchconfiguration.md
   - Hardware Reviews:
       - EP 0 - Unifi Flex Mini 2.5G: hardwarereview/ep0_unififlex2gig.md
   - Software Tutorials:
       - EP 0 - Unbound DNS and Ad Blocker in OPNsense:  SoftwareVideoNotes/EP0_UnboundDNS.md
+      - EP 1 - KASM WorkSpaces: SoftwareVideoNotes/EP1_KASM.md
 
 copyright: |
   &copy; 2024-2025 <a href="https://www.youtube.com/channel/UChC4ztzEchbm0nxIhw5zyog"  target="_blank" rel="noopener">Learn To Homelab</a>
