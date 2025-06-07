@@ -111,6 +111,7 @@ nav:
       - EP 30 - Actual Budget: homelabseries/EP30_actualbudget.md
       - EP 31 - CloudFlare Tunnels: homelabseries/EP31_cloudflaretunnels.md
       - EP 32 - Automatic Security Updates: homelabseries/EP33_AutomaticSecurityUpdates.md
+      - EP 34 - Enable SSH Key Authentication: homelabseries/EP34_SSHKeyAuthentication.md
       
   - Basic Networking:
       - EP 1 - Configuring Cisco Switches: BasicNetworking/EP1_switchconfiguration.md
