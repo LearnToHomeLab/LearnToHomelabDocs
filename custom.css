@@ -1,0 +1,33 @@
+.md-header__button.md-logo {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .md-header__button.md-logo img,
+  .md-header__button.md-logo svg {
+    height: 70%;
+    width: 70%;
+  }
+
+body {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .md-typeset {
+    font-size: 1;
+    line-height: 1.6;
+  }
+  
+  code, pre {
+    font-size: 0.9;
+  }
+  :root {
+    --md-primary-fg-color: #E4141E;
+    --md-primary-fg-color--light: #ECB7B7;
+    --md-primary-fg-color--dark: #E4141E;
+
+  }
