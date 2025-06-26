@@ -114,6 +114,7 @@ nav:
       - EP 34 - Enable SSH Key Authentication: homelabseries/EP34_SSHKeyAuthentication.md
       - EP 35 - Linux Firewall Setup (UFW): homelabseries/EP35_LinuxUFW.md
       - EP 36 - Install Fail2Ban on Linux: homelabseries/EP36_fail2baninstall.md
+      - EP 37 - Remove Unnecessary/Unused Linux Packages: homelabseries/EP37_RemovelinuxPackages.md
       
   - Basic Networking:
       - EP 1 - Configuring Cisco Switches: BasicNetworking/EP1_switchconfiguration.md
