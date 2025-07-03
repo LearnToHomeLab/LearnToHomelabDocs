@@ -1,7 +1,7 @@
 ## 6 How to Upload SSH Keys to GitHub and Manage your SSH Keys
 
 <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/13GwcRvH72s?si=SPWnwJFceiE_qiQ1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/a4zrfomA26s?si=nQpi0OY65LnljLmV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 When installing Ubuntu Server, you may have noticed an option to import SSH keys; that is where this step comes into play. In the previous SSH section (section 2), I showed you how to create and upload SSH keys to your server, you can find that episode [here](https://www.learntohomelab.com/homelabseries/EP34_SSHKeyAuthentication/) if you need to create a key first. Well, you can avoid the majority of those steps by adding the SSH key during the installation of Ubuntu Server from your GitHub account.
