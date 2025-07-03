@@ -14,12 +14,13 @@ First, log in to Github [here](https://github.com/)
 4.  In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal laptop, you might call this key "Personal laptop".
 5.  Select the type as authentication.
 6.  In the "Key" field, paste your public key. This will be found on your computer, _make SURE you copy the public key with .pub extension and NOT your private key (this can be done by right clicking on it, properties,_ and looking at the extension type for .pub).
-    
-    ```
-    C:\\Users\\your_username\\.ssh
-    ```
-    
 7.  Click Add SSH key.
+
+```
+C:\\Users\\your_username\\.ssh
+```
+    
+
 
 If prompted, confirm access to your account on GitHub.
 
