@@ -163,3 +163,15 @@ Next episode we will cover applications that you can install and run on your Tru
 <a href="/images/EP17_truenas/Still 2025-01-28 120605_1.17.1.png" class="image-expand">
     <img src="/images/EP17_truenas/Still 2025-01-28 120605_1.17.1.png" alt="Description of your image">
 </a>
+
+## Follow Us on Social Media
+
+[YouTube](https://www.youtube.com/@learntohomelab)
+
+[Discord](https://discord.gg/6MsHSJWZpH)
+
+[Patreon](https://www.patreon.com/c/learntohomelab)
+
+[Reddit](https://www.reddit.com/r/learntohomelab/)
+
+[Rumble](https://rumble.com/c/c-7585051)

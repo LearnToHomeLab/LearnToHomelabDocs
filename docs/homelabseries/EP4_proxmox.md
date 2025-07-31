@@ -98,3 +98,15 @@ You have now succesfully installed Proxmox for server and container virtualizati
 <a href="/images/EP3_proxmox/p17.png" class="image-expand">
     <img src="/images/EP3_proxmox/p17.png" alt="Description of your image">
 </a>
+
+## Follow Us on Social Media
+
+[YouTube](https://www.youtube.com/@learntohomelab)
+
+[Discord](https://discord.gg/6MsHSJWZpH)
+
+[Patreon](https://www.patreon.com/c/learntohomelab)
+
+[Reddit](https://www.reddit.com/r/learntohomelab/)
+
+[Rumble](https://rumble.com/c/c-7585051)

@@ -66,3 +66,15 @@ Step 3: We will then go under *Files and Links*, *Default location for new attac
 </a>
 
 There you have it, a clean and organized note taking application for the remainder of this course!
+
+## Follow Us on Social Media
+
+[YouTube](https://www.youtube.com/@learntohomelab)
+
+[Discord](https://discord.gg/6MsHSJWZpH)
+
+[Patreon](https://www.patreon.com/c/learntohomelab)
+
+[Reddit](https://www.reddit.com/r/learntohomelab/)
+
+[Rumble](https://rumble.com/c/c-7585051)

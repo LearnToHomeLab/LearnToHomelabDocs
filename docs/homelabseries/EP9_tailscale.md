@@ -236,3 +236,15 @@ Lastly, you can also login to your Tailscale account and manage your devices and
 ## Conclusion
 
 Now you are able to access ANY device on your local home network via your Tailscale server, this means your NAS, game servers, Plex server, etc. Tailscale is like your computer or phone being on your home network where you can browse to anything locally.
+
+## Follow Us on Social Media
+
+[YouTube](https://www.youtube.com/@learntohomelab)
+
+[Discord](https://discord.gg/6MsHSJWZpH)
+
+[Patreon](https://www.patreon.com/c/learntohomelab)
+
+[Reddit](https://www.reddit.com/r/learntohomelab/)
+
+[Rumble](https://rumble.com/c/c-7585051)

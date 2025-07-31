@@ -13,3 +13,15 @@ You are going to plug the switch in to power, and then take ethernet cables and 
 <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/HQZOBCpfbxo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+## Follow Us on Social Media
+
+[YouTube](https://www.youtube.com/@learntohomelab)
+
+[Discord](https://discord.gg/6MsHSJWZpH)
+
+[Patreon](https://www.patreon.com/c/learntohomelab)
+
+[Reddit](https://www.reddit.com/r/learntohomelab/)
+
+[Rumble](https://rumble.com/c/c-7585051)

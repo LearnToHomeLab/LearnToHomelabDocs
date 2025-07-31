@@ -117,9 +117,11 @@ nav:
       - EP 37 - Remove Unnecessary/Unused Linux Packages: homelabseries/EP37_RemovelinuxPackages.md
       - EP 38 - Upload SSH Keys to GitHub and Manage them: homelabseries/EP38_SSHKeysGithub.md
       - EP 39 - Move Proxmox VMs & Containers to a New Storage Drive: homelabseries/EP39_MovingProxmoxVMStorage.md
+  - Linux Master Guide:
+      - EP1 - Create Linux Environment: LinuxMasterGuide/EP1_CreateLinuxEnvironment.md
       
-  - Basic Networking:
-      - EP 1 - Configuring Cisco Switches: BasicNetworking/EP1_switchconfiguration.md
+  # - Basic Networking:
+  #    - EP 1 - Configuring Cisco Switches: BasicNetworking/EP1_switchconfiguration.md
   - Hardware Reviews:
       - EP 0 - Unifi Flex Mini 2.5G: hardwarereview/ep0_unififlex2gig.md
   - Software Tutorials:

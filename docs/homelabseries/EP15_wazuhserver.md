@@ -124,3 +124,15 @@ Then you can click the Wazuh "W" logo on the top right to go back to the homepag
 <a href="/images/EP15_wazuhserver/Still 2025-01-20 115204_1.7.7.png" class="image-expand">
     <img src="/images/EP15_wazuhserver/Still 2025-01-20 115204_1.7.7.png" alt="Description of your image">
 </a>
+
+## Follow Us on Social Media
+
+[YouTube](https://www.youtube.com/@learntohomelab)
+
+[Discord](https://discord.gg/6MsHSJWZpH)
+
+[Patreon](https://www.patreon.com/c/learntohomelab)
+
+[Reddit](https://www.reddit.com/r/learntohomelab/)
+
+[Rumble](https://rumble.com/c/c-7585051)

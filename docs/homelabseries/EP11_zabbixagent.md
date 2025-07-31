@@ -155,3 +155,15 @@ Picture showing data it is currently pulling:
 ## Closing thoughts
 
 That is it! Pretty simple right? Now in another episode we will cover how to add these hosts to data panels on your dashboard but Zabbix is so extensive I would reccomend you Google around yourself and find what you want and add them that way.
+
+## Follow Us on Social Media
+
+[YouTube](https://www.youtube.com/@learntohomelab)
+
+[Discord](https://discord.gg/6MsHSJWZpH)
+
+[Patreon](https://www.patreon.com/c/learntohomelab)
+
+[Reddit](https://www.reddit.com/r/learntohomelab/)
+
+[Rumble](https://rumble.com/c/c-7585051)

@@ -178,3 +178,15 @@ Take note: the below image shows (vtnet0) this is the port that is being used fo
 <a href="/images/EP2_firewall/opn_9.png" class="image-expand">
     <img src="/images/EP2_firewall/opn_9.png" alt="Description of your image">
 </a>
+
+## Follow Us on Social Media
+
+[YouTube](https://www.youtube.com/@learntohomelab)
+
+[Discord](https://discord.gg/6MsHSJWZpH)
+
+[Patreon](https://www.patreon.com/c/learntohomelab)
+
+[Reddit](https://www.reddit.com/r/learntohomelab/)
+
+[Rumble](https://rumble.com/c/c-7585051)

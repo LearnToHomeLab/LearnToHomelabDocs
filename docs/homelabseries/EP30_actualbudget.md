@@ -170,3 +170,15 @@ As for the line item of what you bought on the credit card, this is still set to
 ### Bought and returned goods
 
 To keep your balance sheet accurate, you may buy something, then categorize it. Well, a few weeks or days go by, and you return it, you may add that money as income, right? Wrong, you will add that item to the same category as your initial purchase, which will equal out your balance sheet between categories and keep your account correct.
+
+## Follow Us on Social Media
+
+[YouTube](https://www.youtube.com/@learntohomelab)
+
+[Discord](https://discord.gg/6MsHSJWZpH)
+
+[Patreon](https://www.patreon.com/c/learntohomelab)
+
+[Reddit](https://www.reddit.com/r/learntohomelab/)
+
+[Rumble](https://rumble.com/c/c-7585051)

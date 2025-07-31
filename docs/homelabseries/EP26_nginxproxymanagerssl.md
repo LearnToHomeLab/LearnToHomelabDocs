@@ -317,7 +317,6 @@ Repeat the *proxy host* process for all the services you want to have SSL certif
     <img src="/images/EP26_nginxproxymanagerssl/2025-03-14 13_35_11-Nginx Proxy Manager.png" alt="Description of your image">
 </a>
 
-
 ## Follow Us on Social Media
 
 [YouTube](https://www.youtube.com/@learntohomelab)

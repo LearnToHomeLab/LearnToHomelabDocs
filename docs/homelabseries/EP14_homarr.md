@@ -222,3 +222,14 @@ Lastly, change your settings to match the below screenshot, save, and wait a cou
 
 That is it, if you have any other questions do not forget to hop in our discord! 
 
+## Follow Us on Social Media
+
+[YouTube](https://www.youtube.com/@learntohomelab)
+
+[Discord](https://discord.gg/6MsHSJWZpH)
+
+[Patreon](https://www.patreon.com/c/learntohomelab)
+
+[Reddit](https://www.reddit.com/r/learntohomelab/)
+
+[Rumble](https://rumble.com/c/c-7585051)

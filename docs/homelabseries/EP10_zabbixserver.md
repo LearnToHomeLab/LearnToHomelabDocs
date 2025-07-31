@@ -391,3 +391,15 @@ You are in, stay tuned for next episode on how to setup an agent on your servers
 <a href="/images/EP10_zabbixserver/Still 2025-01-05 093020_1.9.4.png" class="image-expand">
     <img src="/images/EP10_zabbixserver/Still 2025-01-05 093020_1.9.4.png" alt="Description of your image">
 </a>
+
+## Follow Us on Social Media
+
+[YouTube](https://www.youtube.com/@learntohomelab)
+
+[Discord](https://discord.gg/6MsHSJWZpH)
+
+[Patreon](https://www.patreon.com/c/learntohomelab)
+
+[Reddit](https://www.reddit.com/r/learntohomelab/)
+
+[Rumble](https://rumble.com/c/c-7585051)

@@ -145,7 +145,6 @@ Now go into another browser tab and access your service at the URL you created u
 
 [Rumble](https://rumble.com/c/c-7585051)
 
-
 ## Previous video
 
 <div style="display: flex; justify-content: center; align-items: center; height: 100%;">

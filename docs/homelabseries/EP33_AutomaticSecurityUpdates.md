@@ -68,6 +68,7 @@ If you would like to dive deeper into automatic updates, you can edit the follow
 sudo nano /etc/apt/apt.conf.d/50unattended-upgrades
 ```
 
+
 ## Follow Us on Social Media
 
 [YouTube](https://www.youtube.com/@learntohomelab)

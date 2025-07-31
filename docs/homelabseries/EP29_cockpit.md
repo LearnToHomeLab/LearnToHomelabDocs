@@ -127,3 +127,15 @@ This tab is self-explanatory, but it allows you to access your machine via SSH.
 ## Cockpit Server Accounts
 
 Another advantage of Cockpit is your ability to manage multiple machines by clicking your name at the top left and adding more hosts. This allows you to switch between machines easily.
+
+## Follow Us on Social Media
+
+[YouTube](https://www.youtube.com/@learntohomelab)
+
+[Discord](https://discord.gg/6MsHSJWZpH)
+
+[Patreon](https://www.patreon.com/c/learntohomelab)
+
+[Reddit](https://www.reddit.com/r/learntohomelab/)
+
+[Rumble](https://rumble.com/c/c-7585051)

@@ -268,3 +268,15 @@ If you would like to know how to add websites, and your Proxmox machines informa
 <a href="/images/EP13_homarr/Still 2025-01-13 155148_1.3.8.png" class="image-expand">
     <img src="/images/EP13_homarr/Still 2025-01-13 155148_1.3.8.png" alt="Description of your image">
 </a>
+
+## Follow Us on Social Media
+
+[YouTube](https://www.youtube.com/@learntohomelab)
+
+[Discord](https://discord.gg/6MsHSJWZpH)
+
+[Patreon](https://www.patreon.com/c/learntohomelab)
+
+[Reddit](https://www.reddit.com/r/learntohomelab/)
+
+[Rumble](https://rumble.com/c/c-7585051)

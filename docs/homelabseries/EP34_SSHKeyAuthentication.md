@@ -101,6 +101,7 @@ Then SSH back in, and we should be taken back into our server automatically with
 ssh <username>@<server_ip>
 ```
 
+
 ## Follow Us on Social Media
 
 [YouTube](https://www.youtube.com/@learntohomelab)

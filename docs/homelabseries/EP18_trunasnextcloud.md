@@ -184,6 +184,16 @@ It is that simple, what did you think?
 
 I honestly love how simple it is to run your own personal Cloud for images/Documents! I hope you guys subscribe to our YouTube Channel for more content!
 
+## Follow Us on Social Media
 
+[YouTube](https://www.youtube.com/@learntohomelab)
+
+[Discord](https://discord.gg/6MsHSJWZpH)
+
+[Patreon](https://www.patreon.com/c/learntohomelab)
+
+[Reddit](https://www.reddit.com/r/learntohomelab/)
+
+[Rumble](https://rumble.com/c/c-7585051)
 
 

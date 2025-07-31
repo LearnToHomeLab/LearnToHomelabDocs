@@ -134,3 +134,15 @@ If you have not followed our previous video on how to set up SSL certificates wi
 </a>
 
 7.  You will then be able to go to your common websites and add your username and password into Vaultwarden for use at later times, change your passwords to a more complex password, and much more.
+
+## Follow Us on Social Media
+
+[YouTube](https://www.youtube.com/@learntohomelab)
+
+[Discord](https://discord.gg/6MsHSJWZpH)
+
+[Patreon](https://www.patreon.com/c/learntohomelab)
+
+[Reddit](https://www.reddit.com/r/learntohomelab/)
+
+[Rumble](https://rumble.com/c/c-7585051)

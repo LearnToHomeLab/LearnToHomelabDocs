@@ -198,3 +198,15 @@ That is it! I hope you guys enjoyed, if you would like to learn more please see 
 [How to setup Discord Webhooks](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
 
 [Wazuh external integration configurations](https://documentation.wazuh.com/current/user-manual/manager/integration-with-external-apis.html)
+
+## Follow Us on Social Media
+
+[YouTube](https://www.youtube.com/@learntohomelab)
+
+[Discord](https://discord.gg/6MsHSJWZpH)
+
+[Patreon](https://www.patreon.com/c/learntohomelab)
+
+[Reddit](https://www.reddit.com/r/learntohomelab/)
+
+[Rumble](https://rumble.com/c/c-7585051)

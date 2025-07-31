@@ -253,3 +253,15 @@ That is it, you have set up your Pi-Hole network wide add blocker! We do however
 <a href="/images/EP7_pihole/Still 2024-12-23 115344_1.9.1.png" class="image-expand">
     <img src="/images/EP7_pihole/Still 2024-12-23 115344_1.9.1.png" alt="Description of your image">
 </a>
+
+## Follow Us on Social Media
+
+[YouTube](https://www.youtube.com/@learntohomelab)
+
+[Discord](https://discord.gg/6MsHSJWZpH)
+
+[Patreon](https://www.patreon.com/c/learntohomelab)
+
+[Reddit](https://www.reddit.com/r/learntohomelab/)
+
+[Rumble](https://rumble.com/c/c-7585051)

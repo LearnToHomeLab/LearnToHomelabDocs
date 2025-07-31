@@ -46,6 +46,7 @@ Here are a list of common firewall rules you may need to use or come across ofte
 
 Ultimately, how you use the UWF will be on a case-by-case basis based on the services you are running. I hope this short and quick tutorial gives you an overview and idea of how the UFW works. It is a great tool and highly recommended to use; it just adds another layer of security to your infrastructure. 
 
+
 ## Follow Us on Social Media
 
 [YouTube](https://www.youtube.com/@learntohomelab)

@@ -90,9 +90,10 @@ In the next episode we will cover how to create a Ceph Pool and get our cluster 
 
 [Discord](https://discord.gg/6MsHSJWZpH)
 
+[Patreon](https://www.patreon.com/c/learntohomelab)
+
 [Reddit](https://www.reddit.com/r/learntohomelab/)
 
 [Rumble](https://rumble.com/c/c-7585051)
-
 
 

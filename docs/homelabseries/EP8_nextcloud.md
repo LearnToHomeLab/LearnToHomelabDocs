@@ -232,3 +232,15 @@ Then we can use the + button just like the site and upload pictures or create fo
 ## Closing comments
 
 That is it, I hope you guys enjoyed! In a later episode we will cover Tailscale and how to access your NextCloud from outside your network. 
+
+## Follow Us on Social Media
+
+[YouTube](https://www.youtube.com/@learntohomelab)
+
+[Discord](https://discord.gg/6MsHSJWZpH)
+
+[Patreon](https://www.patreon.com/c/learntohomelab)
+
+[Reddit](https://www.reddit.com/r/learntohomelab/)
+
+[Rumble](https://rumble.com/c/c-7585051)

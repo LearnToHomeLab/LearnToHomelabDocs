@@ -56,3 +56,15 @@ That is it, here is a quick and basic example of what your newly created dashboa
 ## Closing thoughts
 
 Join our discord and share screenshots of your custom made dashboards [Discord](https://discord.gg/6MsHSJWZpH)
+
+## Follow Us on Social Media
+
+[YouTube](https://www.youtube.com/@learntohomelab)
+
+[Discord](https://discord.gg/6MsHSJWZpH)
+
+[Patreon](https://www.patreon.com/c/learntohomelab)
+
+[Reddit](https://www.reddit.com/r/learntohomelab/)
+
+[Rumble](https://rumble.com/c/c-7585051)

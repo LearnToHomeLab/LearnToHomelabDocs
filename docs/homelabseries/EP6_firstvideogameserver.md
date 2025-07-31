@@ -277,3 +277,15 @@ Would you look at that, you are in! Potentially your first video game server set
 <a href="/images/EP6_gameserver/Still 2024-12-19 153947_1.10.2.png" class="image-expand">
     <img src="/images/EP6_gameserver/Still 2024-12-19 153947_1.10.2.png" alt="Description of your image">
 </a>
+
+## Follow Us on Social Media
+
+[YouTube](https://www.youtube.com/@learntohomelab)
+
+[Discord](https://discord.gg/6MsHSJWZpH)
+
+[Patreon](https://www.patreon.com/c/learntohomelab)
+
+[Reddit](https://www.reddit.com/r/learntohomelab/)
+
+[Rumble](https://rumble.com/c/c-7585051)

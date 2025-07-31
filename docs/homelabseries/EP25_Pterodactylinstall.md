@@ -223,4 +223,3 @@ We are in!
 [Reddit](https://www.reddit.com/r/learntohomelab/)
 
 [Rumble](https://rumble.com/c/c-7585051)
-
