@@ -126,6 +126,6 @@ nav:
       - EP 0 - Unifi Flex Mini 2.5G: hardwarereview/ep0_unififlex2gig.md
   - Software Tutorials:
       - Affine Workspaces: softwaretutorials/affineorkspaces.md
-    
+      - Kasm Workspaces: softwaretutorials/kasm.md
 copyright: |
   &copy; 2024-2025 <a href="https://www.youtube.com/channel/UChC4ztzEchbm0nxIhw5zyog"  target="_blank" rel="noopener">Learn To Homelab</a>
