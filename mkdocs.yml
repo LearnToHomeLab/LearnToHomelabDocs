@@ -119,6 +119,7 @@ nav:
       - EP 39 - Move Proxmox VMs & Containers to a New Storage Drive: homelabseries/EP39_MovingProxmoxVMStorage.md
   - Linux Master Guide:
       - EP1 - Create Linux Environment: LinuxMasterGuide/EP1_CreateLinuxEnvironment.md
+      - EP2 - Command Line Basics: LinuxMasterGuide/EP2_CLI_Basics.md
       
   # - Basic Networking:
   #    - EP 1 - Configuring Cisco Switches: BasicNetworking/EP1_switchconfiguration.md
