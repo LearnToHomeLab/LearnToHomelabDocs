@@ -128,5 +128,6 @@ nav:
   - Software Tutorials:
       - Affine Workspaces: softwaretutorials/affineorkspaces.md
       - Kasm Workspaces: softwaretutorials/kasm.md
+      - Install Minecraft (TrueNAS): softwaretutorials/HowToInstallMinecraftOnTrueNAS.md
 copyright: |
   &copy; 2024-2025 <a href="https://www.youtube.com/channel/UChC4ztzEchbm0nxIhw5zyog"  target="_blank" rel="noopener">Learn To Homelab</a>
