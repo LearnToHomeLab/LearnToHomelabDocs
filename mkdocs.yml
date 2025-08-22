@@ -77,7 +77,7 @@ markdown_extensions:
       #emoji_generator: !!python/name:materialx.emoji.to_svg
 nav:
   - Home: index.md #anything at this level will show as a tab at the top of the page
-  - Homelab Series:
+  - Homelab Series: 
       - EP 0 - Start Guide: homelabseries/EP0_startguide.md
       - EP 1 - Note Keeping: homelabseries/EP1_notekeeping.md
       - EP 2 - Switch Install: homelabseries/EP2_switch.md
@@ -117,9 +117,12 @@ nav:
       - EP 37 - Remove Unnecessary/Unused Linux Packages: homelabseries/EP37_RemovelinuxPackages.md
       - EP 38 - Upload SSH Keys to GitHub and Manage them: homelabseries/EP38_SSHKeysGithub.md
       - EP 39 - Move Proxmox VMs & Containers to a New Storage Drive: homelabseries/EP39_MovingProxmoxVMStorage.md
+      - EP 40 - Enable Suricata Rules OPNsense: homelabseries/EP40_SuricataRulesOPNsense.md
   - Linux Master Guide:
       - EP1 - Create Linux Environment: LinuxMasterGuide/EP1_CreateLinuxEnvironment.md
       - EP2 - Command Line Basics: LinuxMasterGuide/EP2_CLI_Basics.md
+      - EP3 - User Management Linux: LinuxMasterGuide/EP3_UserMangament.md
+      - EP4 - User and File Permissions: LinuxMasterGuide/EP4_LinuxPermissions.md
       
   # - Basic Networking:
   #    - EP 1 - Configuring Cisco Switches: BasicNetworking/EP1_switchconfiguration.md
@@ -129,5 +132,6 @@ nav:
       - Affine Workspaces: softwaretutorials/affineorkspaces.md
       - Kasm Workspaces: softwaretutorials/kasm.md
       - Install Minecraft (TrueNAS): softwaretutorials/HowToInstallMinecraftOnTrueNAS.md
+      - Proxmox RAM Upgrade: softwaretutorials/proxmoxramupgrade.md
 copyright: |
   &copy; 2024-2025 <a href="https://www.youtube.com/channel/UChC4ztzEchbm0nxIhw5zyog"  target="_blank" rel="noopener">Learn To Homelab</a>

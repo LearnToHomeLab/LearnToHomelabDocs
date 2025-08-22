@@ -12,6 +12,9 @@ In this episode we will cover:
 2. Installing VirtualBox
 3. Installing VboxTools
 
+## Checkout this series here   
+Check out videos in this playlist [here](https://www.youtube.com/playlist?list=PLAvgoEDVC5qGxD1JIioyofs2IL7XKUnkT)
+
 ## Follow Us on Social Media
 
 [YouTube](https://www.youtube.com/@learntohomelab)

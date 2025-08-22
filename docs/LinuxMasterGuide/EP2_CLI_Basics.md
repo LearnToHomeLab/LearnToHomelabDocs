@@ -30,6 +30,9 @@ Linux has two main ways of identifying a user’s access level. A <kbd>$</kbd> i
 | Alias/Unalias (name) | Assigns a name to commands | Sometimes typing commands can get really repetitive, or if you need to type a long command many times, it’s best to have an alias you can use for that. To create an alias for a command you simply specify an alias name and set it to the command. |
 | Exit | Logout command |     |
 
+## Checkout this series here   
+Check out videos in this playlist [here](https://www.youtube.com/playlist?list=PLAvgoEDVC5qGxD1JIioyofs2IL7XKUnkT)
+
 ## Updating Linux
 
 Before you do anything, it is always best to ensure your Linux Environment is up to date and pulling the latest repos:
