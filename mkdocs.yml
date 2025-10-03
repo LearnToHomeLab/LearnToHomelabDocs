@@ -123,6 +123,7 @@ nav:
       - EP2 - Command Line Basics: LinuxMasterGuide/EP2_CLI_Basics.md
       - EP3 - User Management Linux: LinuxMasterGuide/EP3_UserMangament.md
       - EP4 - User and File Permissions: LinuxMasterGuide/EP4_LinuxPermissions.md
+      - EP5 - Linux Processes: LinuxMasterGuide/EP5_LinuxProcesses.md
       
   # - Basic Networking:
   #    - EP 1 - Configuring Cisco Switches: BasicNetworking/EP1_switchconfiguration.md
