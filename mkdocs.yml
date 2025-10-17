@@ -118,6 +118,7 @@ nav:
       - EP 38 - Upload SSH Keys to GitHub and Manage them: homelabseries/EP38_SSHKeysGithub.md
       - EP 39 - Move Proxmox VMs & Containers to a New Storage Drive: homelabseries/EP39_MovingProxmoxVMStorage.md
       - EP 40 - Enable Suricata Rules OPNsense: homelabseries/EP40_SuricataRulesOPNsense.md
+      - EP 41 - OPNsense ISC DHCP Migration to Dndsmasq DHCP: homelabseries/EP41_OPNsense ISC DHCP Migration to Dndsmasq DHCP.md
   - Linux Master Guide:
       - EP1 - Create Linux Environment: LinuxMasterGuide/EP1_CreateLinuxEnvironment.md
       - EP2 - Command Line Basics: LinuxMasterGuide/EP2_CLI_Basics.md
