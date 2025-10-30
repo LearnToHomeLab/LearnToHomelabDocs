@@ -1,0 +1,3136 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../EP21_ProxmoxCeph/">
+      
+      
+        <link rel="next" href="../EP23_notesinnextcloud/">
+      
+      
+      <link rel="icon" href="/images/logo/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>EP 22 - Homarr 1.0 Install/Upgrade - Learn To HomeLab</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Helvetica";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-8W8J33P5JD"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-8W8J33P5JD",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-8W8J33P5JD",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#what-we-will-cover" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Learn To HomeLab" class="md-header__button md-logo" aria-label="Learn To HomeLab" data-md-component="logo">
+      
+  <img src="/images/logo/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Learn To HomeLab
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              EP 22 - Homarr 1.0 Install/Upgrade
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="lime"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../EP0_startguide/" class="md-tabs__link">
+          
+  
+  
+  Homelab Series
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../LinuxMasterGuide/EP1_CreateLinuxEnvironment/" class="md-tabs__link">
+          
+  
+  
+  Linux Master Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../hardwarereview/ep0_unififlex2gig/" class="md-tabs__link">
+          
+  
+  
+  Hardware Reviews
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../softwaretutorials/affineorkspaces/" class="md-tabs__link">
+          
+  
+  
+  Software Tutorials
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Learn To HomeLab" class="md-nav__button md-logo" aria-label="Learn To HomeLab" data-md-component="logo">
+      
+  <img src="/images/logo/favicon.png" alt="logo">
+
+    </a>
+    Learn To HomeLab
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Homelab Series
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Homelab Series
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP0_startguide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 0 - Start Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP1_notekeeping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 1 - Note Keeping
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP2_switch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 2 - Switch Install
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP3_firewall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 3 - Firewall Install
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP4_proxmox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 4 - Proxmox Install
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP5_firstvmubuntu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 5 - Setting up your first VM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP6_firstvideogameserver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 6 - Setting up your first Video Game Server (Minecraft Example)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP7_setuppihole/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 7 - Set up Pihole with Proxmox
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP8_nextcloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 8 - NextCloud Install with Proxmox
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP9_tailscale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 9 - Tailscale Install with Proxmox
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP10_zabbixserver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 10 - Zabbix Server Install with Proxmox
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP11_zabbixagent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 11 - Zabbix Agent Install on a VM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP12_zabbixdashboards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 12 - Zabbix - How to Create Dashboards
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP13_homarr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 13 - How to Install The Homarr Dashboard
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP14_homarr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 14 - Get Proxmox Stats In Homarrs Dashboard
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP15_wazuhserver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 15 - How to Install The Wazuh Server
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP16_wazuhagent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 16 - Install the Wazuh Agent
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP17_truenasscale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 17 - Install Truenas Scale
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP18_trunasnextcloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 18 - Install NextCloud on TrueNas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP19_wazuhdiscordalerts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 19 - Wazuh Discord Alerts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP20_ProxmoxClustering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 20 - Proxmox Cluster Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP21_ProxmoxCeph/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 21 - Proxmox Live VM Migration (ceph)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    EP 22 - Homarr 1.0 Install/Upgrade
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 22 - Homarr 1.0 Install/Upgrade
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-we-will-cover" class="md-nav__link">
+    <span class="md-ellipsis">
+      What we will cover
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting started
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fresh-install-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fresh Install Users
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fresh Install Users">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Docker Compose
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-homarr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Homarr
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-proxmox-api-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a Proxmox API Key
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating a Proxmox API Key">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#make-new-api-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      make new API key
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-your-certificate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding your Certificate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-proxmox-stats-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Proxmox Stats Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrade-path-for-old-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrade path for old users
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Upgrade path for old users">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-homarr-vm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a new Homarr VM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-docker-compose_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Docker Compose
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-homarr_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Homarr
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exporting-your-old-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exporting your old dashboard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-your-certificate_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding your Certificate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-proxmox-stats-integration_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Proxmox Stats Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating-homarr-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Updating Homarr 1.0
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#follow-us-on-social-media" class="md-nav__link">
+    <span class="md-ellipsis">
+      Follow Us on Social Media
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP23_notesinnextcloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 23 - Note Taking with NextCloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP24_jellyFin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 24 - JellyFin on TrueNas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP25_Pterodactylinstall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 25 - Pterodactyl Game Panel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP26_nginxproxymanagerssl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 26 - Nginx Proxy Manager
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP27_docmost/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 27 - Install Docmost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP28_vaultwarden/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 28 - Install Vaultwarden
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP29_cockpit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 29 - Install Cockpit
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP30_actualbudget/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 30 - Actual Budget
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP31_cloudflaretunnels/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 31 - CloudFlare Tunnels
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP33_AutomaticSecurityUpdates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 32 - Automatic Security Updates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP34_SSHKeyAuthentication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 34 - Enable SSH Key Authentication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP35_LinuxUFW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 35 - Linux Firewall Setup (UFW)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP36_fail2baninstall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 36 - Install Fail2Ban on Linux
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP37_RemovelinuxPackages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 37 - Remove Unnecessary/Unused Linux Packages
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP38_SSHKeysGithub/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 38 - Upload SSH Keys to GitHub and Manage them
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP39_MovingProxmoxVMStorage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 39 - Move Proxmox VMs & Containers to a New Storage Drive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP40_SuricataRulesOPNsense/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 40 - Enable Suricata Rules OPNsense
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP41_OPNsense%20ISC%20DHCP%20Migration%20to%20Dndsmasq%20DHCP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 41 - OPNsense ISC DHCP Migration to Dndsmasq DHCP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Linux Master Guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Linux Master Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LinuxMasterGuide/EP1_CreateLinuxEnvironment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP1 - Create Linux Environment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LinuxMasterGuide/EP2_CLI_Basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP2 - Command Line Basics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LinuxMasterGuide/EP3_UserMangament/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP3 - User Management Linux
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LinuxMasterGuide/EP4_LinuxPermissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP4 - User and File Permissions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LinuxMasterGuide/EP5_LinuxProcesses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP5 - Linux Processes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Hardware Reviews
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Hardware Reviews
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardwarereview/ep0_unififlex2gig/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 0 - Unifi Flex Mini 2.5G
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Software Tutorials
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Software Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../softwaretutorials/affineorkspaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Affine Workspaces
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../softwaretutorials/kasm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kasm Workspaces
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../softwaretutorials/HowToInstallMinecraftOnTrueNAS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install Minecraft (TrueNAS)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../softwaretutorials/proxmoxramupgrade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Proxmox RAM Upgrade
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../softwaretutorials/MikrotikAPManagedByOPNsense/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mikrotik AP DHCP Config With OPNsense
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../softwaretutorials/ModdedMinecraftOnTrueNAS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Modded Minecraft on TrueNAS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-we-will-cover" class="md-nav__link">
+    <span class="md-ellipsis">
+      What we will cover
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting started
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fresh-install-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fresh Install Users
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fresh Install Users">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Docker Compose
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-homarr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Homarr
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-proxmox-api-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a Proxmox API Key
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating a Proxmox API Key">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#make-new-api-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      make new API key
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-your-certificate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding your Certificate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-proxmox-stats-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Proxmox Stats Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrade-path-for-old-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrade path for old users
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Upgrade path for old users">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-homarr-vm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a new Homarr VM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-docker-compose_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Docker Compose
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-homarr_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Homarr
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exporting-your-old-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exporting your old dashboard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-your-certificate_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding your Certificate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-proxmox-stats-integration_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Proxmox Stats Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating-homarr-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Updating Homarr 1.0
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#follow-us-on-social-media" class="md-nav__link">
+    <span class="md-ellipsis">
+      Follow Us on Social Media
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>EP 22 - Homarr 1.0 Install/Upgrade</h1>
+
+<p>This episode is an update to episode 13 AND 14 due to Homarr's source code being redone. </p>
+<h2 id="what-we-will-cover">What we will cover</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informative Section</title>
+<style>
+.informative-section {
+    background-color: #8CD2F4; /* light blue background color */
+    color: black; /* Text color to contrast with dark background */
+    padding: 20px; /* Padding inside the box */
+    border-radius: 10px; /* Rounded corners */
+    display: flex;
+    align-items: center;
+}
+.circle-emoji {
+    width: 50px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 20px;
+    color: #231F20; /* Dark gray color for the exclamation mark */
+}
+</style>
+</head>
+<body>
+
+<div class="informative-section">
+    <div class="circle-emoji">!</div>
+    <p>This episode is good for FRESH INSTALLS AND those who are UPGRADING from the old Homarr Dashboard</p>
+</div>
+
+</body>
+</html>
+
+<ol>
+<li>Creating a new VM for the new Homarr Dashboard</li>
+<li>How to create an API key for Proxmox usage stats.</li>
+<li>How to install the new 1.0 Homarr dashboard</li>
+<li>How to upgrade from the old dashboard to the new dashboard. </li>
+<li>How to add trusted certificates to your dashboard</li>
+<li>How to edit old Proxmox intergrations</li>
+<li>How to create new Proxmox intergrations in the Homarr Dashboard</li>
+</ol>
+<h2 id="getting-started">Getting started</h2>
+<div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Rv9Ob8M2QQI?si=XkpT897yZ-2OllqL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<h2 id="fresh-install-users">Fresh Install Users</h2>
+<p>Create a new Ubuntu Server VM in Proxmox with the following:</p>
+<ol>
+<li>OS: Ubuntu Server</li>
+<li>2gb of ram</li>
+<li>2 vcores, </li>
+<li>32gb of storage. </li>
+</ol>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.5.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.5.1.png" alt="Description of your image">
+</a></p>
+<p><strong><em>During install ensure you enable SSH!</em></strong></p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.7.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.7.1.png" alt="Description of your image">
+</a></p>
+<p>On your new VM we need to install Docker and Homarr with the following commands:</p>
+<p>SSH into your NEW homarr VM using the following command:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ssh &lt;username&gt;@&lt;VM_ipaddress&gt;
+</code></pre></div>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.1.png" alt="Description of your image">
+</a></p>
+<p>Adding the GPG keys and Docker repo:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a># Add Docker&#39;s official GPG key:
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo apt-get update
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>sudo apt-get install ca-certificates curl
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>sudo install -m 0755 -d /etc/apt/keyrings
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>sudo chmod a+r /etc/apt/keyrings/docker.asc
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a># Add the repository to Apt sources:
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>echo \
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  &quot;deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  $(lsb_release -cs) stable&quot; | \
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>  sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>sudo apt-get update
+</code></pre></div>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.2.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.2.png" alt="Description of your image">
+</a></p>
+<p>Install the Latest Package:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+</code></pre></div>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.3.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.3.png" alt="Description of your image">
+</a></p>
+<p>Ensure Docker is running after Install, you will get a response like this.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo docker run hello-world
+</code></pre></div>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.4.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.4.png" alt="Description of your image">
+</a></p>
+<details>
+<summary>If Docker hello fails do the following</summary>
+
+if you do not get a response try
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>systemctl status docker.service
+</code></pre></div>
+
+
+
+If that shows failed messages, try the following
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo systemctl daemon-reload
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>sudo systemctl restart docker
+</code></pre></div>
+
+Then try to see its status once again:
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>systemctl status docker.service
+</code></pre></div>
+
+<a href="/images/EP13_homarr/docker status_1.3.2.png" class="image-expand">
+
+    <img src="/images/EP13_homarr/docker status_1.3.2.png" alt="Description of your image">
+
+</a>
+</details>
+
+<h3 id="install-docker-compose">Install Docker Compose</h3>
+<p>Install Docker Compose with: </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo apt install docker-compose
+</code></pre></div>
+<p>Verify that docker compose is installed</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>docker compose version
+</code></pre></div>
+<h3 id="install-homarr">Install Homarr</h3>
+<p>Then create a docker compose file:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>nano docker-compose.yml
+</code></pre></div>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.5.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.5.png" alt="Description of your image">
+</a></p>
+<p>Copy the following file config in there for your Homarr docker compose file.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>#---------------------------------------------------------------------#
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>#     Homarr - A simple, yet powerful dashboard for your server.      #
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>#---------------------------------------------------------------------#
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>services:
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>  homarr:
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>    container_name: homarr
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>    image: ghcr.io/homarr-labs/homarr:latest
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>    restart: unless-stopped
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>    volumes:
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>      - /var/run/docker.sock:/var/run/docker.sock # Optional, only if you want docker integration
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>      - ./homarr/appdata:/appdata
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>    environment:
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>      - SECRET_ENCRYPTION_KEY=51564af476c9eecd2efb30ed980a4b2e768efb7a558676859e2e1fbd04ce15a0
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>    ports:
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>      - &#39;7575:7575&#39;
+</code></pre></div>
+To get out of the above editor you will do the following:
+To exit: <kbd>ctrl + X</kbd> </p>
+<p>To confirm save: <kbd>y</kbd></p>
+<p>To confirm the file name you are saving to: <kbd>enter</kbd></p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.6.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.6.png" alt="Description of your image">
+</a></p>
+<p>Then run the following to start it:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sudo docker compose up -d
+</code></pre></div>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.7.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.7.png" alt="Description of your image">
+</a></p>
+<p>Then to login to your machine you will type the following into your browser to access the panel:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>ip_address:7575
+</code></pre></div>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.12.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.12.1.png" alt="Description of your image">
+</a></p>
+<h3 id="creating-a-proxmox-api-key">Creating a Proxmox API Key</h3>
+<h4 id="make-new-api-key">make new API key</h4>
+<ol>
+<li>Navigate to the Proxmox portal, click on Datacenter</li>
+<li>Expand Permissions, click on Groups</li>
+<li>Click the Create button</li>
+</ol>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.14.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.14.1.png" alt="Description of your image">
+</a></p>
+<ol>
+<li>Name the group something informative, like api-users</li>
+</ol>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.14.2.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.14.2.png" alt="Description of your image">
+</a></p>
+<ol>
+<li>Click on the Permissions "folder"</li>
+<li>Click Add -&gt; Group Permission</li>
+</ol>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.14.3.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.14.3.png" alt="Description of your image">
+</a></p>
+<ul>
+<li>Path: /</li>
+<li>Group: group from Step 4 above</li>
+<li>Role: PVEAuditor</li>
+<li>Propagate: Checked</li>
+</ul>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.14.4.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.14.4.png" alt="Description of your image">
+</a></p>
+<ol>
+<li>Expand Permissions, click on Users</li>
+<li>Click the Add button<ul>
+<li>User name: something informative like api</li>
+<li>Realm: Proxmox VE authentication server</li>
+<li>Password: create a secure password for the user</li>
+<li>Confirm Password: re-enter the password</li>
+<li>Group: group from Step 4 above</li>
+</ul>
+</li>
+</ol>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.14.5.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.14.5.png" alt="Description of your image">
+</a></p>
+<ol>
+<li>Expand Permissions, click on API Tokens</li>
+<li>Click the Add button<ul>
+<li>User: user from Step 8 above</li>
+<li>Token ID: something informative like the application or purpose like homarr</li>
+<li>Privilege Separation: unchecked</li>
+</ul>
+</li>
+</ol>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.14.6.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.14.6.png" alt="Description of your image">
+</a></p>
+<ol>
+<li>Copy the Secret that is shown below because it is only shown once</li>
+</ol>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.14.7.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.14.7.png" alt="Description of your image">
+</a></p>
+<ol>
+<li>Go back to the "Permissions" menu</li>
+<li>Click Add -&gt; API Token Permission</li>
+</ol>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.14.8.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.14.8.png" alt="Description of your image">
+</a></p>
+<div class="highlight"><pre><span></span><code>- Path: /
+- API Token: select the API token created in Step 10
+- Role: PVE Auditor
+- Propagate: Checked
+</code></pre></div>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.14.9.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.14.9.png" alt="Description of your image">
+</a></p>
+<h3 id="adding-your-certificate">Adding your Certificate</h3>
+<p>Now we need to grab the Proxmox certificate.</p>
+<ol>
+<li>Select the node where your Homarr Dashboard is located. </li>
+<li>Select Certificates</li>
+<li>Select the pve-root-ca.pem certificate</li>
+<li>Click View certificate</li>
+</ol>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.22.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.22.1.png" alt="Description of your image">
+</a></p>
+<p>Next we need to copy the contents to a notepad and then save the file as
+<code>certificate_name.crt</code></p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.23.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.23.1.png" alt="Description of your image">
+</a></p>
+<p>Pasting it into Notepad</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.24.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.24.1.png" alt="Description of your image">
+</a></p>
+<p>Saving it as a .crt file name</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.25.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.25.1.png" alt="Description of your image">
+</a></p>
+<p>Now go over to your Homarr dashboard and on the top right click / your username bubble / Manage</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.26.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.26.1.png" alt="Description of your image">
+</a></p>
+<p>Next go to:
+1. Tools
+2. Certificates
+3. (top right) select add certificate
+4. Add your saved certifcate 
+5. Click add.</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.26.2.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.26.2.png" alt="Description of your image">
+</a></p>
+<p><code>showing the certificate added</code></p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.26.3.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.26.3.png" alt="Description of your image">
+</a></p>
+<p>You should now see a valid certificate</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.26.4.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.26.4.png" alt="Description of your image">
+</a></p>
+<h3 id="adding-proxmox-stats-integration">Adding Proxmox Stats Integration</h3>
+<p>Now we can go over to the Apps page and create a new app (this must be done before adding the integration)</p>
+<p>Click new app</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.27.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.27.1.png" alt="Description of your image">
+</a></p>
+<ol>
+<li>Now you can give it whatever name you want.</li>
+<li>Search for the icon related to what you are connecting (in our case Proxmox)</li>
+<li>grab the IP(URL) address of the Proxmox Node we want to see stats from.</li>
+<li>Click create</li>
+</ol>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.27.2.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.27.2.png" alt="Description of your image">
+</a></p>
+<p>Now go to the integrations tab:
+1. New integration
+2. Search and select Proxmox</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.27.3.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.27.3.png" alt="Description of your image">
+</a></p>
+<p><strong><em>This is where people struggle because this is the major change from the old Homarr panel</em></strong></p>
+<p>We are going to go grab the correct information from Proxmox for the username, token ID, API key, and realm. </p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.27.4.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.27.4.png" alt="Description of your image">
+</a></p>
+<p>Over on Proxmox:</p>
+<ol>
+<li>Go to the data center at the top</li>
+<li>Go to API Token</li>
+<li>We will see the username</li>
+<li>We will see the Token name</li>
+</ol>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.28.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.28.1.png" alt="Description of your image">
+</a></p>
+<p>Go back over to Homarr and fill out that respective information in the username and token ID field. Remember you also need to paste your API key you created under the (make a new API key) section. </p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.28.2.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.28.2.png" alt="Description of your image">
+</a></p>
+<p>Lastly we just need to get the realm. </p>
+<p>Your realms are found under datacenter / realms. We are going ot be using PVE so our real will be PVE. </p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.28.3.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.28.3.png" alt="Description of your image">
+</a></p>
+<p>like so:</p>
+<p>Then test connection and connect.</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.28.4.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.28.4.png" alt="Description of your image">
+</a></p>
+<p>Click the Homarr logo at the top left to go back to your main dashboard OR (Boards on the far right, then select your dashboard from there)</p>
+<p>On the top right click the pencil icon to edit your dashboard (it won't look like ours below)</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.29.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.29.1.png" alt="Description of your image">
+</a></p>
+<p>Now you will notice all your icons have three dots on the top right and your board is now editable.</p>
+<p>There will be a <kdb>+</kbd> icon on the top right, click that and then select new item.</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.30.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.30.1.png" alt="Description of your image">
+</a></p>
+<p>Under the items we need to select (System Health Monitoring) and click add to board</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.30.2.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.30.2.png" alt="Description of your image">
+</a></p>
+<p>Now on our dashboard page we will see that new section with no data, click the three dots on the right and click edit item.</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.30.3.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.30.3.png" alt="Description of your image">
+</a></p>
+<p>From the integrations drop down menu select the integration we just created, and click save changes.</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.30.4.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.30.4.png" alt="Description of your image">
+</a></p>
+<p>Now you can see we have the Proxmox stats on our dashboard!</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.31.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.31.1.png" alt="Description of your image">
+</a></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Warning Box Example</title>
+
+<style>
+.warning-box {
+    background-color: #E4141E; /* Light red background color */
+    border-left: 6px solid #8CD2F4; /* Red border on the left side */
+    padding: 10px; /* Padding inside the box */
+    margin-bottom: 20px; /* Margin at the bottom to separate from other content */
+}
+</style>
+</head>
+<body>
+
+<div class="warning-box">
+    <p>The fresh install tutorial is now over</p>
+</div>
+
+</body>
+</html>
+
+<h2 id="upgrade-path-for-old-users">Upgrade path for old users</h2>
+<h3 id="create-a-new-homarr-vm">Create a new Homarr VM</h3>
+<p>Create a new Ubuntu Server VM in Proxmox with the following:</p>
+<ol>
+<li>OS: Ubuntu Server</li>
+<li>2gb of ram</li>
+<li>2 vcores, </li>
+<li>32gb of storage. </li>
+</ol>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.5.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.5.1.png" alt="Description of your image">
+</a></p>
+<p><strong><em>During install ensure you enable SSH!</em></strong></p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.7.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.7.1.png" alt="Description of your image">
+</a></p>
+<p>On your new VM we need to install Docker and Homarr with the following commands:</p>
+<p>SSH into your NEW homarr VM using the following command:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>ssh &lt;username&gt;@&lt;VM_ipaddress&gt;
+</code></pre></div>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.1.png" alt="Description of your image">
+</a></p>
+<p>Adding the GPG keys and Docker repo:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a># Add Docker&#39;s official GPG key:
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>sudo apt-get update
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>sudo apt-get install ca-certificates curl
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>sudo install -m 0755 -d /etc/apt/keyrings
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>sudo chmod a+r /etc/apt/keyrings/docker.asc
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a># Add the repository to Apt sources:
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>echo \
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>  &quot;deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>  $(lsb_release -cs) stable&quot; | \
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>  sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>sudo apt-get update
+</code></pre></div>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.2.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.2.png" alt="Description of your image">
+</a></p>
+<p>Install the Latest Package:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+</code></pre></div>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.3.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.3.png" alt="Description of your image">
+</a></p>
+<p>Ensure Docker is running after Install, you will get a response like this.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>sudo docker run hello-world
+</code></pre></div>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.4.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.4.png" alt="Description of your image">
+</a></p>
+<details>
+<summary>If Docker hello fails do the following</summary>
+
+if you do not get a response try
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>systemctl status docker.service
+</code></pre></div>
+
+
+
+If that shows failed messages, try the following
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>sudo systemctl daemon-reload
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>sudo systemctl restart docker
+</code></pre></div>
+
+Then try to see its status once again:
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>systemctl status docker.service
+</code></pre></div>
+
+<a href="/images/EP13_homarr/docker status_1.3.2.png" class="image-expand">
+
+    <img src="/images/EP13_homarr/docker status_1.3.2.png" alt="Description of your image">
+
+</a>
+</details>
+
+<h3 id="install-docker-compose_1">Install Docker Compose</h3>
+<p>Install Docker Compose with: </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>sudo apt install docker-compose
+</code></pre></div>
+<p>Verify that docker compose is installed</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>docker compose version
+</code></pre></div>
+<h3 id="install-homarr_1">Install Homarr</h3>
+<p>Then create a docker compose file:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>nano docker-compose.yml
+</code></pre></div>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.5.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.5.png" alt="Description of your image">
+</a></p>
+<p>Copy the following file config in there for your Homarr docker compose file.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>#---------------------------------------------------------------------#
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>#     Homarr - A simple, yet powerful dashboard for your server.      #
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>#---------------------------------------------------------------------#
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>services:
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>  homarr:
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>    container_name: homarr
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>    image: ghcr.io/homarr-labs/homarr:latest
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>    restart: unless-stopped
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>    volumes:
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>      - /var/run/docker.sock:/var/run/docker.sock # Optional, only if you want docker integration
+<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a>      - ./homarr/appdata:/appdata
+<a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a>    environment:
+<a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a>      - SECRET_ENCRYPTION_KEY=51564af476c9eecd2efb30ed980a4b2e768efb7a558676859e2e1fbd04ce15a0
+<a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a>    ports:
+<a id="__codelineno-23-15" name="__codelineno-23-15" href="#__codelineno-23-15"></a>      - &#39;7575:7575&#39;
+</code></pre></div>
+To get out of the above editor you will do the following:
+To exit: <kbd>ctrl + X</kbd> </p>
+<p>To confirm save: <kbd>y</kbd></p>
+<p>To confirm the file name you are saving to: <kbd>enter</kbd></p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.6.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.6.png" alt="Description of your image">
+</a></p>
+<p>Then run the following to start it:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>sudo docker compose up -d
+</code></pre></div>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.7.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.11.7.png" alt="Description of your image">
+</a></p>
+<p>Then to login to your machine you will type the following into your browser to access the panel:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>ip_address:7575
+</code></pre></div>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.12.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.12.1.png" alt="Description of your image">
+</a></p>
+<h3 id="exporting-your-old-dashboard">Exporting your old dashboard</h3>
+<p>login to your OLD Homarr Dashboard, click the username top right, clicked manage, under settings go to tools, migrate to 1.0</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.15.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.15.1.png" alt="Description of your image">
+</a></p>
+<p>here is how you get to that menu:</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.16.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.16.1.png" alt="Description of your image">
+</a></p>
+<p>Select export data (copy your encryption key to your notes!!!!) and ensure you also select keep on the top right of your browser if it tries to block it.</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.17.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.17.1.png" alt="Description of your image">
+</a></p>
+<p>Going over to your fresh VM you just created, click (import from Homarr before 1.0)</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.18.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.18.1.png" alt="Description of your image">
+</a></p>
+<p>After selecting your .zip file you will be presented with the screen below. We are not changing ANY of the settings, simply click (confirm import and continue)</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.18.3.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.18.3.png" alt="Description of your image">
+</a></p>
+<p>Now paste that encryption key so Homarr and unzip your old dashboard.</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.18.4.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.18.4.png" alt="Description of your image">
+</a></p>
+<p>We wont be changing any of the settings here but you can turn off (send anonymous analytics) if you want.</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.19.2.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.19.2.png" alt="Description of your image">
+</a></p>
+<p>You will be presented with the following screen, we are going to select (go to default-large board)</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.19.3.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.19.3.png" alt="Description of your image">
+</a></p>
+<p>You may then be prompted to login, you will do this with the credentials of your old dashboard (because now its really your new dashboard)</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.19.4.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.19.4.png" alt="Description of your image">
+</a></p>
+<p>Now we are going to select (configure server-wide home dashboard) this is where we will set the default dashboard when you login.</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.20.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.20.1.png" alt="Description of your image">
+</a></p>
+<p>Find your old dashboards, click the three dots, then select (set as your home board)</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.20.2.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.20.2.png" alt="Description of your image">
+</a></p>
+<p>Now you have your dashboard back! </p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.20.3.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.20.3.png" alt="Description of your image">
+</a></p>
+<h3 id="adding-your-certificate_1">Adding your Certificate</h3>
+<p>Now we need to grab the Proxmox certificate.</p>
+<ol>
+<li>Select the node where your Homarr Dashboard is located. </li>
+<li>Select Certificates</li>
+<li>Select the pve-root-ca.pem certificate</li>
+<li>Click View certificate</li>
+</ol>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.22.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.22.1.png" alt="Description of your image">
+</a></p>
+<p>Next we need to copy the contents to a notepad and then save the file as
+<code>certificate_name.crt</code></p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.23.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.23.1.png" alt="Description of your image">
+</a></p>
+<p>Pasting it into Notepad</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.24.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.24.1.png" alt="Description of your image">
+</a></p>
+<p>Saving it as a .crt file name</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.25.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.25.1.png" alt="Description of your image">
+</a></p>
+<p>Now go over to your Homarr dashboard and on the top right click / your username bubble / Manage</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.26.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.26.1.png" alt="Description of your image">
+</a></p>
+<p>Next go to:
+1. Tools
+2. Certificates
+3. (top right) select add certificate
+4. Add your saved certifcate 
+5. Click add.</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.26.2.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.26.2.png" alt="Description of your image">
+</a></p>
+<p><code>showing the certificate added</code></p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.26.3.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.26.3.png" alt="Description of your image">
+</a></p>
+<p>You should now see a valid certificate</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.26.4.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.26.4.png" alt="Description of your image">
+</a></p>
+<h3 id="adding-proxmox-stats-integration_1">Adding Proxmox Stats Integration</h3>
+<p>Now we can go over to the Apps page and create a new app (this must be done before adding the integration)</p>
+<p>Click new app</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.27.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.27.1.png" alt="Description of your image">
+</a></p>
+<ol>
+<li>Now you can give it whatever name you want.</li>
+<li>Search for the icon related to what you are connecting (in our case Proxmox)</li>
+<li>grab the IP(URL) address of the Proxmox Node we want to see stats from.</li>
+<li>Click create</li>
+</ol>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.27.2.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.27.2.png" alt="Description of your image">
+</a></p>
+<p>Now go to the integrations tab:
+1. New integration
+2. Search and select Proxmox</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.27.3.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.27.3.png" alt="Description of your image">
+</a></p>
+<p><strong><em>This is where people struggle because this is the major change from the old Homarr panel</em></strong></p>
+<p>We are going to go grab the correct information from Proxmox for the username, token ID, API key, and realm. </p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.27.4.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.27.4.png" alt="Description of your image">
+</a></p>
+<p>Over on Proxmox:</p>
+<ol>
+<li>Go to the data center at the top</li>
+<li>Go to API Token</li>
+<li>We will see the username</li>
+<li>We will see the Token name</li>
+</ol>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.28.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.28.1.png" alt="Description of your image">
+</a></p>
+<p>Go back over to Homarr and fill out that respective information in the username and token ID field. Remember you also need to paste your API key you created under the (make a new API key) section. </p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.28.2.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.28.2.png" alt="Description of your image">
+</a></p>
+<p>Lastly we just need to get the realm. </p>
+<p>Your realms are found under datacenter / realms. We are going ot be using PVE so our real will be PVE. </p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.28.3.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.28.3.png" alt="Description of your image">
+</a></p>
+<p>like so:</p>
+<p>Then test connection and connect.</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.28.4.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.28.4.png" alt="Description of your image">
+</a></p>
+<p>Click the Homarr logo at the top left to go back to your main dashboard OR (Boards on the far right, then select your dashboard from there)</p>
+<p>On the top right click the pencil icon to edit your dashboard (it won't look like ours below)</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.29.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.29.1.png" alt="Description of your image">
+</a></p>
+<p>Now you will notice all your icons have three dots on the top right and your board is now editable.</p>
+<p>There will be a <kdb>+</kbd> icon on the top right, click that and then select new item.</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.30.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.30.1.png" alt="Description of your image">
+</a></p>
+<p>Under the items we need to select (System Health Monitoring) and click add to board</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.30.2.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.30.2.png" alt="Description of your image">
+</a></p>
+<p>Now on our dashboard page we will see that new section with no data, click the three dots on the right and click edit item.</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.30.3.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.30.3.png" alt="Description of your image">
+</a></p>
+<p>From the integrations drop down menu select the integration we just created, and click save changes.</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.30.4.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.30.4.png" alt="Description of your image">
+</a></p>
+<p>Now you can see we have the Proxmox stats on our dashboard!</p>
+<p><a href="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.31.1.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/Still 2025-02-23 111731_1.31.1.png" alt="Description of your image">
+</a></p>
+<h2 id="updating-homarr-10">Updating Homarr 1.0</h2>
+<p>To update, navigate to the directory with the <em>docker-compose.yaml</em> located. (This will need to be done using the sudo command or becoming the super user with <em>sudo su</em>)</p>
+<p>Stop Homarr using </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>docker compose down
+</code></pre></div>
+<p>Pull the newest image of Homarr using </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>docker compose pull
+</code></pre></div>
+<p>Start Homarr again using the below command. (-d for detached mode - start in background)</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>docker compose up -d 
+</code></pre></div>
+<p>Delete the old image using (Warning: this also removes you other unused images - not just Homarr)</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>docker image prune
+</code></pre></div>
+<p><a href="/images/EP22_homarr1.0upgrade/homarr update.png" class="image-expand">
+    <img src="/images/EP22_homarr1.0upgrade/homarr update.png" alt="Description of your image">
+</a></p>
+<h2 id="follow-us-on-social-media">Follow Us on Social Media</h2>
+<p><a href="https://www.youtube.com/@learntohomelab">YouTube</a></p>
+<p><a href="https://discord.gg/6MsHSJWZpH">Discord</a></p>
+<p><a href="https://www.patreon.com/c/learntohomelab">Patreon</a></p>
+<p><a href="https://www.reddit.com/r/learntohomelab/">Reddit</a></p>
+<p><a href="https://rumble.com/c/c-7585051">Rumble</a></p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024-2025 <a href="https://www.youtube.com/channel/UChC4ztzEchbm0nxIhw5zyog"  target="_blank" rel="noopener">Learn To Homelab</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="hhttps://github.com/LearnToHomeLab" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M202.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M496 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/channel/UChC4ztzEchbm0nxIhw5zyog" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.
+</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="analytics" checked>
+      <span class="task-list-indicator"></span>
+      Google Analytics
+    </label>
+  </li>
+
+      
+    
+    
+      
+    
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.sections", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

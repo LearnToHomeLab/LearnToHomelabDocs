@@ -1,0 +1,2266 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../EP1_notekeeping/">
+      
+      
+      <link rel="icon" href="/images/logo/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>EP 0 - Start Guide - Learn To HomeLab</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Helvetica";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-8W8J33P5JD"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-8W8J33P5JD",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-8W8J33P5JD",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#welcome" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Learn To HomeLab" class="md-header__button md-logo" aria-label="Learn To HomeLab" data-md-component="logo">
+      
+  <img src="/images/logo/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Learn To HomeLab
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              EP 0 - Start Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="lime"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Homelab Series
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../LinuxMasterGuide/EP1_CreateLinuxEnvironment/" class="md-tabs__link">
+          
+  
+  
+  Linux Master Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../hardwarereview/ep0_unififlex2gig/" class="md-tabs__link">
+          
+  
+  
+  Hardware Reviews
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../softwaretutorials/affineorkspaces/" class="md-tabs__link">
+          
+  
+  
+  Software Tutorials
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Learn To HomeLab" class="md-nav__button md-logo" aria-label="Learn To HomeLab" data-md-component="logo">
+      
+  <img src="/images/logo/favicon.png" alt="logo">
+
+    </a>
+    Learn To HomeLab
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Homelab Series
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Homelab Series
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    EP 0 - Start Guide
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 0 - Start Guide
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-homelab" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is a Homelab?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#first-things-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      First things first
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-will-learn" class="md-nav__link">
+    <span class="md-ellipsis">
+      What you will learn
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#not-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      Not required
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#order-of-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Order of Content
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP1_notekeeping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 1 - Note Keeping
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP2_switch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 2 - Switch Install
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP3_firewall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 3 - Firewall Install
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP4_proxmox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 4 - Proxmox Install
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP5_firstvmubuntu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 5 - Setting up your first VM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP6_firstvideogameserver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 6 - Setting up your first Video Game Server (Minecraft Example)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP7_setuppihole/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 7 - Set up Pihole with Proxmox
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP8_nextcloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 8 - NextCloud Install with Proxmox
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP9_tailscale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 9 - Tailscale Install with Proxmox
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP10_zabbixserver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 10 - Zabbix Server Install with Proxmox
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP11_zabbixagent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 11 - Zabbix Agent Install on a VM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP12_zabbixdashboards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 12 - Zabbix - How to Create Dashboards
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP13_homarr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 13 - How to Install The Homarr Dashboard
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP14_homarr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 14 - Get Proxmox Stats In Homarrs Dashboard
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP15_wazuhserver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 15 - How to Install The Wazuh Server
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP16_wazuhagent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 16 - Install the Wazuh Agent
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP17_truenasscale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 17 - Install Truenas Scale
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP18_trunasnextcloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 18 - Install NextCloud on TrueNas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP19_wazuhdiscordalerts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 19 - Wazuh Discord Alerts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP20_ProxmoxClustering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 20 - Proxmox Cluster Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP21_ProxmoxCeph/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 21 - Proxmox Live VM Migration (ceph)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP22_homarr1.0upgrade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 22 - Homarr 1.0 Install/Upgrade
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP23_notesinnextcloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 23 - Note Taking with NextCloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP24_jellyFin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 24 - JellyFin on TrueNas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP25_Pterodactylinstall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 25 - Pterodactyl Game Panel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP26_nginxproxymanagerssl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 26 - Nginx Proxy Manager
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP27_docmost/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 27 - Install Docmost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP28_vaultwarden/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 28 - Install Vaultwarden
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP29_cockpit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 29 - Install Cockpit
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP30_actualbudget/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 30 - Actual Budget
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP31_cloudflaretunnels/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 31 - CloudFlare Tunnels
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP33_AutomaticSecurityUpdates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 32 - Automatic Security Updates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP34_SSHKeyAuthentication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 34 - Enable SSH Key Authentication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP35_LinuxUFW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 35 - Linux Firewall Setup (UFW)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP36_fail2baninstall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 36 - Install Fail2Ban on Linux
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP37_RemovelinuxPackages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 37 - Remove Unnecessary/Unused Linux Packages
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP38_SSHKeysGithub/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 38 - Upload SSH Keys to GitHub and Manage them
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP39_MovingProxmoxVMStorage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 39 - Move Proxmox VMs & Containers to a New Storage Drive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP40_SuricataRulesOPNsense/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 40 - Enable Suricata Rules OPNsense
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EP41_OPNsense%20ISC%20DHCP%20Migration%20to%20Dndsmasq%20DHCP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 41 - OPNsense ISC DHCP Migration to Dndsmasq DHCP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Linux Master Guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Linux Master Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LinuxMasterGuide/EP1_CreateLinuxEnvironment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP1 - Create Linux Environment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LinuxMasterGuide/EP2_CLI_Basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP2 - Command Line Basics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LinuxMasterGuide/EP3_UserMangament/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP3 - User Management Linux
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LinuxMasterGuide/EP4_LinuxPermissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP4 - User and File Permissions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LinuxMasterGuide/EP5_LinuxProcesses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP5 - Linux Processes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Hardware Reviews
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Hardware Reviews
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardwarereview/ep0_unififlex2gig/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EP 0 - Unifi Flex Mini 2.5G
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Software Tutorials
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Software Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../softwaretutorials/affineorkspaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Affine Workspaces
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../softwaretutorials/kasm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kasm Workspaces
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../softwaretutorials/HowToInstallMinecraftOnTrueNAS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install Minecraft (TrueNAS)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../softwaretutorials/proxmoxramupgrade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Proxmox RAM Upgrade
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../softwaretutorials/MikrotikAPManagedByOPNsense/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mikrotik AP DHCP Config With OPNsense
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../softwaretutorials/ModdedMinecraftOnTrueNAS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Modded Minecraft on TrueNAS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-homelab" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is a Homelab?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#first-things-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      First things first
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-will-learn" class="md-nav__link">
+    <span class="md-ellipsis">
+      What you will learn
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#not-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      Not required
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#order-of-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Order of Content
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="welcome">Welcome</h1>
+<p>LTH is glad to see you here! This free course focuses on beginners and newcomers to IT, Cyber Security, and Network Engineering prospects (and really anyone interested in IT or self-hosting services)!</p>
+<p><a href="https://youtube.com/playlist?list=PLAvgoEDVC5qFPNbsRBT-naqnsZwxIcqQ6&amp;si=Pn6K2clYE_zLVs5C">Our YouTube videos accompany this series; click here to find that series on YouTube!</a></p>
+<div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/K9gXMoPrPA0?si=i-yFKPqx8_fom9Xv" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<h2 id="introduction">Introduction</h2>
+<p>What does this course encompass and it is right for me is a question most of you are asking. You may even be asking yourself if you have enough knowledge to be successful in this course, and the answer is yes you do. </p>
+<p>The course "HomeLab" you are about to embark on was created so that even the most novice individual could follow. Please take the time to read through this page and every lesson page; there are lots of great details!</p>
+<h2 id="what-is-a-homelab">What is a Homelab?</h2>
+<p>An IT homelab is a personal setup where enthusiasts and professionals experiment with and learn about computer systems, networking, cybersecurity, and server management at home. Using hardware like old PCs, servers, or mini computers, homelabbers create virtual environments to explore IT concepts, test software, and develop skills in areas like virtualization, network security, and system administration. Homelabs mimic business IT environments, enabling hands-on practice with technologies like firewalls, cloud services, and automation tools, helping users advance their careers, troubleshoot, and stay current with industry trends.</p>
+<h2 id="first-things-first">First things first</h2>
+<p>This course is about getting hands-on skills to pass an interview that will be an entry-level job for many of you. Although there are many high-level or "very knowledgeable" areas of focus throughout this course, experience is king. You also must understand that everyone puts in their "sweat equity" before they reach the top. If your family needs to support you or your spouse must start working while you transition or take a pay cut to get an entry-level role, that is sweat equity. The technical field is a very fast return on investment AS LONG AS you apply yourself. You should be qualified and take on responsibility for the position you want to be in. Do not get in that ugly mindset that you are worth some set amount of money, prove it. </p>
+<p>Lastly, before we get started, realize that this industry is COMPETITIVE, if you want to study, get a job, and sit back, this industry is not for you. I have been doing this for about ten years, and to this day, I spend around 10-20 hours a week bettering myself. </p>
+<h2 id="what-you-will-learn">What you will learn</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Warning Box Example</title>
+<style>
+.warning-box {
+    background-color: #E4141E; /* Light red background color */
+    border-left: 6px solid #8CD2F4; /* Red border on the left side */
+    padding: 10px; /* Padding inside the box */
+    margin-bottom: 20px; /* Margin at the bottom to separate from other content */
+    /* You can add more styles as needed */
+}
+</style>
+</head>
+<body>
+
+<div class="warning-box">
+    <p>Some videos are not required to setup a successful home lab, use case will determine that, please read on.</p>
+</div>
+
+</body>
+</html>
+
+<p>Below, you will find a breakdown of the network we are going to set up and some of the services. The image you are looking at in IT is called a topology. Topologies come in two forms: logical and physical. Any time we use the term logical, we refer to digital or how the computers will communicate or host services. Physical topologies show you how the devices are interconnected. </p>
+<p>In this case, our topology does both; we can see the arrows from the public internet down and imagine each arrow as being an ethernet cable connecting our homelab devices together. We can see for this course, we will use three servers, but realistically, if you do not want to or cannot afford to, you can simply use one server and host all your stuff on that. The other two servers will be used to teach a more professional and closer to an enterprise setup so to speak. Please take a moment to look at our topology for a high-level overview of what will be covered here. </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informative Section</title>
+<style>
+.informative-section {
+    background-color: #8CD2F4; /* light blue background color */
+    color: black; /* Text color to contrast with dark background */
+    padding: 20px; /* Padding inside the box */
+    border-radius: 10px; /* Rounded corners */
+    display: flex;
+    align-items: center;
+}
+.circle-emoji {
+    width: 50px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 20px;
+    color: #231F20; /* Dark gray color for the exclamation mark */
+}
+</style>
+</head>
+<body>
+
+<div class="informative-section">
+    <div class="circle-emoji">!</div>
+    <p>Throughout this course, during each episode, you will see the topology map with a red box. The content contained within the red box is what the lesson will be covering and what part of the home lab setup we are on.</p>
+</div>
+
+</body>
+</html>
+<p><a href="/images/start guide/course flow.png" class="image-expand">
+    <img src="/images/start guide/course flow.png" alt="Description of your image">
+</a>
+Here is what that topology looks like in physical form without the stage 2 servers.
+<a href="/images/EP2_switch/switch.png" class="image-expand">
+    <img src="/images/EP2_switch/switch.png" alt="Description of your image">
+</a></p>
+<p>Okay before we get down to the course content it is important to understand that there are certain things you are not <strong>REQUIRED</strong> to do. What do we mean by this? HomeLabs are about learning and catering towards what you want, however some people may expose things to the internet or use a virtual private network (VPN) that will allow them access to their internal resources externally. <strong>In this course we will cover some of that but will NOT be making services public through the firewall. Best practice will be to use a VPN tunnel and that is what is covered in this course. Because of this, the Firewall video/device is not required.</strong></p>
+<p>I know budget is always of concern for anyone, so again pay attention to what is required and what is not required below. By not having to setup a firewall, you can invest that money into a small form factor PC and install Proxmox on there. </p>
+<h2 id="not-required">Not required</h2>
+<ol>
+<li>Opnsense/PFsense Firewall (Episode - 3)</li>
+<li>Stage 2, as indicated in the topology breakdown. A NAS backup and fail-over machine are solely for people learning more advanced technologies and capabilities. They are not required for the main purpose of this course.</li>
+</ol>
+<h2 id="order-of-content">Order of Content</h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=K9gXMoPrPA0&amp;list=PLAvgoEDVC5qFPNbsRBT-naqnsZwxIcqQ6&amp;index=1">Getting started (Intro video)</a> </li>
+<li><a href="/homelabseries/EP1_notekeeping/">Note taking</a></li>
+<li><a href="/homelabseries/EP2_switch/">Installing your switch</a></li>
+<li><a href="/homelabseries/EP3_firewall/">Firewall</a></li>
+<li><a href="/homelabseries/EP4_proxmox/">Proxmox</a></li>
+<li><a href="/homelabseries/EP5_firstvmubuntu/">Setting up our first VM (Ubuntu)</a></li>
+<li><a href="/homelabseries/EP6_firstvideogameserver">First Video Game Server (minecraft)</a></li>
+<li><a href="/homelabseries/EP7_setuppihole">Setup Pi-Hole with Proxmox</a></li>
+<li><a href="/homelabseries/EP8_nextcloud">Setup NextCloud with Proxmox</a></li>
+<li><a href="/homelabseries/EP9_tailscale">Setup Tailscale with Proxmox</a></li>
+<li><a href="/homelabseries/EP10_zabbixserver">Zabbix Server With Proxmox</a></li>
+<li><a href="/homelabseries/EP11_zabbixagent">Zabbix Agent Install on a VM</a></li>
+<li><a href="/homelabseries/EP12_zabbixdashboards">Zabbix Dashboard Creation</a></li>
+<li><a href="/homelabseries/EP15_wazuhserver">Install the Wazuh Server</a></li>
+<li><a href="/homelabseries/EP16_wazuhagent">Install the Wazuh Agent</a></li>
+<li><a href="/homelabseries/EP17_truenasscale">Install TrueNas Scale</a></li>
+</ol>
+<p>This series continues but these are the fundamental episodes of the series. If you would like to find more content related to this series, please the column on the left. </p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024-2025 <a href="https://www.youtube.com/channel/UChC4ztzEchbm0nxIhw5zyog"  target="_blank" rel="noopener">Learn To Homelab</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="hhttps://github.com/LearnToHomeLab" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M202.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M496 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/channel/UChC4ztzEchbm0nxIhw5zyog" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.
+</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="analytics" checked>
+      <span class="task-list-indicator"></span>
+      Google Analytics
+    </label>
+  </li>
+
+      
+    
+    
+      
+    
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.sections", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
