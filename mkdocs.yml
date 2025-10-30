@@ -136,5 +136,6 @@ nav:
       - Install Minecraft (TrueNAS): softwaretutorials/HowToInstallMinecraftOnTrueNAS.md
       - Proxmox RAM Upgrade: softwaretutorials/proxmoxramupgrade.md
       - Mikrotik AP DHCP Config With OPNsense: softwaretutorials/MikrotikAPManagedByOPNsense.md
+      - Modded Minecraft on TrueNAS: softwaretutorials/ModdedMinecraftOnTrueNAS.md
 copyright: |
   &copy; 2024-2025 <a href="https://www.youtube.com/channel/UChC4ztzEchbm0nxIhw5zyog"  target="_blank" rel="noopener">Learn To Homelab</a>
